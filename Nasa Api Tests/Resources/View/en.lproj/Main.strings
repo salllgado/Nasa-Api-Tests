@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "NAO_USUARIO"; ObjectID = "DKJ-FS-yxm"; */
+"DKJ-FS-yxm.normalTitle" = "NAO_USUARIO";
+
+/* Class = "UITextField"; placeholder = "login"; ObjectID = "eeH-bx-Tlc"; */
+"eeH-bx-Tlc.placeholder" = "login";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "gcg-SF-kUj"; */
+"gcg-SF-kUj.placeholder" = "password";

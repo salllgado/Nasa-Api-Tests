@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
-		B8929FB8204A2D9E00FB5C05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* ViewController.swift */; };
+		B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* IntroController.swift */; };
 		B8929FBB204A2D9E00FB5C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FB9204A2D9E00FB5C05 /* Main.storyboard */; };
 		B8929FBD204A2D9E00FB5C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8929FBC204A2D9E00FB5C05 /* Assets.xcassets */; };
 		B8929FC0204A2D9E00FB5C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FBE204A2D9E00FB5C05 /* LaunchScreen.storyboard */; };
 		B8929FCB204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FCA204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift */; };
+		B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8929FDE204A2FCE00FB5C05 /* UserData.xcdatamodeld */; };
+		B8929FE2204A330E00FB5C05 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FE1204A330E00FB5C05 /* Menu.storyboard */; };
+		B8E451D92059DF2100FBBCCE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8E451DB2059DF2100FBBCCE /* Localizable.strings */; };
+		B8E451E22059E19300FBBCCE /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E451E12059E19300FBBCCE /* Utilites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +32,7 @@
 /* Begin PBXFileReference section */
 		B8929FB2204A2D9E00FB5C05 /* Nasa Api Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Api Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8929FB7204A2D9E00FB5C05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8929FB7204A2D9E00FB5C05 /* IntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
 		B8929FBA204A2D9E00FB5C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8929FBC204A2D9E00FB5C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8929FBF204A2D9E00FB5C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +40,14 @@
 		B8929FC6204A2D9F00FB5C05 /* Nasa Api TestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nasa Api TestsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FCA204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_Api_TestsUITests.swift; sourceTree = "<group>"; };
 		B8929FCC204A2D9F00FB5C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8929FDF204A2FCE00FB5C05 /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
+		B8929FE1204A330E00FB5C05 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		B8E451DA2059DF2100FBBCCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B8E451DC2059DF8A00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		B8E451DD2059DF8B00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B8E451DE2059DF8B00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B8E451E02059DFC400FBBCCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		B8E451E12059E19300FBBCCE /* Utilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +89,9 @@
 		B8929FB4204A2D9E00FB5C05 /* Nasa Api Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */,
-				B8929FB7204A2D9E00FB5C05 /* ViewController.swift */,
-				B8929FB9204A2D9E00FB5C05 /* Main.storyboard */,
-				B8929FBC204A2D9E00FB5C05 /* Assets.xcassets */,
-				B8929FBE204A2D9E00FB5C05 /* LaunchScreen.storyboard */,
-				B8929FC1204A2D9E00FB5C05 /* Info.plist */,
+				B8929FDB204A2EC200FB5C05 /* App Managerment */,
+				B8929FD8204A2E9000FB5C05 /* Resources */,
+				B8929FD6204A2E6B00FB5C05 /* Sources */,
 			);
 			path = "Nasa Api Tests";
 			sourceTree = "<group>";
@@ -94,6 +103,69 @@
 				B8929FCC204A2D9F00FB5C05 /* Info.plist */,
 			);
 			path = "Nasa Api TestsUITests";
+			sourceTree = "<group>";
+		};
+		B8929FD5204A2E6400FB5C05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8929FD6204A2E6B00FB5C05 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B8929FD7204A2E7F00FB5C05 /* Controllers */,
+				B8929FD5204A2E6400FB5C05 /* Model */,
+				B8E451DB2059DF2100FBBCCE /* Localizable.strings */,
+				B8929FDE204A2FCE00FB5C05 /* UserData.xcdatamodeld */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B8929FD7204A2E7F00FB5C05 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B8929FB7204A2D9E00FB5C05 /* IntroController.swift */,
+				B8E451E12059E19300FBBCCE /* Utilites.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B8929FD8204A2E9000FB5C05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8929FDA204A2EA500FB5C05 /* View */,
+				B8929FD9204A2E9E00FB5C05 /* Media */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B8929FD9204A2E9E00FB5C05 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				B8929FBC204A2D9E00FB5C05 /* Assets.xcassets */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		B8929FDA204A2EA500FB5C05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8929FB9204A2D9E00FB5C05 /* Main.storyboard */,
+				B8929FBE204A2D9E00FB5C05 /* LaunchScreen.storyboard */,
+				B8929FE1204A330E00FB5C05 /* Menu.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8929FDB204A2EC200FB5C05 /* App Managerment */ = {
+			isa = PBXGroup;
+			children = (
+				B8929FC1204A2D9E00FB5C05 /* Info.plist */,
+				B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */,
+			);
+			path = "App Managerment";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +234,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = B8929FA9204A2D9E00FB5C05;
 			productRefGroup = B8929FB3204A2D9E00FB5C05 /* Products */;
@@ -179,7 +252,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8929FE2204A330E00FB5C05 /* Menu.storyboard in Resources */,
 				B8929FC0204A2D9E00FB5C05 /* LaunchScreen.storyboard in Resources */,
+				B8E451D92059DF2100FBBCCE /* Localizable.strings in Resources */,
 				B8929FBD204A2D9E00FB5C05 /* Assets.xcassets in Resources */,
 				B8929FBB204A2D9E00FB5C05 /* Main.storyboard in Resources */,
 			);
@@ -199,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8929FB8204A2D9E00FB5C05 /* ViewController.swift in Sources */,
+				B8E451E22059E19300FBBCCE /* Utilites.swift in Sources */,
+				B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */,
+				B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */,
 				B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +304,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				B8929FBA204A2D9E00FB5C05 /* Base */,
+				B8E451DC2059DF8A00FBBCCE /* pt-BR */,
+				B8E451E02059DFC400FBBCCE /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -235,8 +314,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				B8929FBF204A2D9E00FB5C05 /* Base */,
+				B8E451DD2059DF8B00FBBCCE /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B8E451DB2059DF2100FBBCCE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8E451DA2059DF2100FBBCCE /* en */,
+				B8E451DE2059DF8B00FBBCCE /* pt-BR */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -246,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -290,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -303,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -341,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -355,12 +446,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HT3YCTX6YE;
-				INFOPLIST_FILE = "Nasa Api Tests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Nasa Api Tests/App Managerment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "salgadosProductions.Nasa-Api-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -370,12 +462,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HT3YCTX6YE;
-				INFOPLIST_FILE = "Nasa Api Tests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Nasa Api Tests/App Managerment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "salgadosProductions.Nasa-Api-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -442,6 +535,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B8929FDE204A2FCE00FB5C05 /* UserData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B8929FDF204A2FCE00FB5C05 /* UserData.xcdatamodel */,
+			);
+			currentVersion = B8929FDF204A2FCE00FB5C05 /* UserData.xcdatamodel */;
+			path = UserData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B8929FAA204A2D9E00FB5C05 /* Project object */;
 }

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Nasa Api Tests
+
+  Created by Chrystian Salgado on 02/03/2018.
+  Copyright © 2018 Chrystian Salgado. All rights reserved.
+*/
+
+"WELLCOME" = "Bem Vindo";
+"SIGNIN_BUTTON_TITLE" = "Logar";
+"SIGNUP_BUTTON_TITLE" = "Não é usuario ?";
+"EMAIL_PLACEHOLDER" = "email@email.com";
+"PASSWORD_PLACEHOLDER" = "************";
