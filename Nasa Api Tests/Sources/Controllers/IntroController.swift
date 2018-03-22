@@ -22,26 +22,25 @@ class IntroController: UIViewController {
         super.viewDidLoad()
         
         // Adiciona um titulo ao navigation bar
-        title = NSLocalizedString("WELLCOME", comment: "")
+        title = utils.setLocalizableText("WELLCOME")
         
-        loginTf.placeholder = NSLocalizedString("EMAIL_PLACEHOLDER", comment: "")
-        passwordTf.placeholder = NSLocalizedString("PASSWORD_PLACEHOLDER", comment: "")
-        signInBtn.setTitle(NSLocalizedString("SIGNIN_BUTTON_TITLE", comment: ""), for: .normal)
-        signUpBtn.setTitle(NSLocalizedString("SIGNUP_BUTTON_TITLE", comment: ""), for: .normal)
+        loginTf.placeholder = utils.setLocalizableText("EMAIL_PLACEHOLDER")
+        passwordTf.placeholder = utils.setLocalizableText("PASSWORD_PLACEHOLDER")
+        signInBtn.setTitle(utils.setLocalizableText("SIGNIN_BUTTON_TITLE"), for: .normal)
+        signUpBtn.setTitle(utils.setLocalizableText("SIGNUP_BUTTON_TITLE"), for: .normal)
     }
     
     @IBAction func actionSignIn(_ sender: Any) {
-        let alert = utils.buildAlert(title: "Titulo", mensage: "Mensagem") { (_) -> Void? in
+        let alert = utils.buildAlert(title: "Titulo", mensage: "Mensagem", alertButtons: [.OK]) { (_) -> Void? in
             print("Retornou aqui")
         }
         present(alert, animated: true, completion: nil)
     }
     
     @IBAction func actionSignUp(_ sender: Any) {
-        utils.buildAlert(title: "Titulo", mensage: "Mensagem") { (_) -> Void? in
+        let alert = utils.buildAlert(title: "Titulo", mensage: "Mensagem", alertButtons: [.CANCEL, .OK]) { (_) -> Void? in
             print("Retornou aqui")
-            
         }
+        present(alert, animated: true, completion: nil)
     }
-    
 }

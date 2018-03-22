@@ -9,16 +9,41 @@
 import Foundation
 import UIKit
 
+public enum AlertButtons {
+    case OK
+    case CANCEL
+    case DISMISS
+}
+
 class Utilites {
     
-    open func buildAlert(title: String?, mensage: String?, completion: @escaping (_ :Void?)->Void?)  -> UIAlertController{
+    open func buildAlert(title: String?, mensage: String?, alertButtons: [AlertButtons], completion: @escaping (_ :Void?)->Void?)  -> UIAlertController{
         let alertBox = UIAlertController(title: title, message: mensage, preferredStyle: .alert)
-        let actionDismiss = UIAlertAction(title: "DISMISS", style: .default) { (_) in
-            completion(nil)
+        for itens in alertButtons {
+            switch itens {
+            case .OK:
+                let action = UIAlertAction(title: setLocalizableText("OK"), style: .default) { (_) in
+                    completion(nil)
+                }
+                alertBox.addAction(action)
+            case .CANCEL:
+                let action = UIAlertAction(title: setLocalizableText("CANCEL"), style: .default) { (_) in }
+                alertBox.addAction(action)
+            case .DISMISS:
+                let action = UIAlertAction(title: setLocalizableText("DISMISS"), style: .default) { (_) in }
+                alertBox.addAction(action)
+            }
         }
-        
-        alertBox.addAction(actionDismiss)
         return alertBox
+    }
+    
+    /*
+     - Seta uma localização definida por string
+     - Parameter: String
+     - Return: NSLocalizedString
+    */
+    open func setLocalizableText(_ text: String) -> String {
+        return NSLocalizedString(text, comment: "")
     }
 }
 

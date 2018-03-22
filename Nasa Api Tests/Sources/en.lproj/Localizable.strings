@@ -11,3 +11,6 @@
 "SIGNUP_BUTTON_TITLE" = "Not User ?";
 "EMAIL_PLACEHOLDER" = "email@email.com";
 "PASSWORD_PLACEHOLDER" = "************";
+"OK!" = "OK!";
+"CANCEL" = "Cancel";
+"DISMISS" = "Dismiss";
