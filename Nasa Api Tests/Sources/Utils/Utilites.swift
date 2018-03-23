@@ -9,12 +9,6 @@
 import Foundation
 import UIKit
 
-public enum AlertButtons {
-    case OK
-    case CANCEL
-    case DISMISS
-}
-
 class Utilites {
     
     open func buildAlert(title: String?, mensage: String?, alertButtons: [AlertButtons], completion: @escaping (_ :Void?)->Void?)  -> UIAlertController{
@@ -44,6 +38,18 @@ class Utilites {
     */
     open func setLocalizableText(_ text: String) -> String {
         return NSLocalizedString(text, comment: "")
+    }
+    
+    open func validateField(_ fields: [UITextField]) -> Bool {
+        var validateState: Bool = true
+        for field in fields {
+            if let text = field.text {
+                if text.isEmpty || text == " " {
+                    validateState = false
+                }
+            }
+        }
+        return validateState == false ? validateState : true
     }
 }
 

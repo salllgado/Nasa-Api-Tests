@@ -16,6 +16,7 @@
 		B8929FCB204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FCA204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift */; };
 		B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8929FDE204A2FCE00FB5C05 /* UserData.xcdatamodeld */; };
 		B8929FE2204A330E00FB5C05 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FE1204A330E00FB5C05 /* Menu.storyboard */; };
+		B8B5F5EF20645FDE00EE571F /* AlertButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B5F5EE20645FDE00EE571F /* AlertButtons.swift */; };
 		B8E451D92059DF2100FBBCCE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8E451DB2059DF2100FBBCCE /* Localizable.strings */; };
 		B8E451E22059E19300FBBCCE /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E451E12059E19300FBBCCE /* Utilites.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		B8929FCC204A2D9F00FB5C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8929FDF204A2FCE00FB5C05 /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
 		B8929FE1204A330E00FB5C05 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		B8B5F5EE20645FDE00EE571F /* AlertButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButtons.swift; sourceTree = "<group>"; };
 		B8E451DA2059DF2100FBBCCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B8E451DC2059DF8A00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		B8E451DD2059DF8B00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -139,6 +141,8 @@
 		B8929FD6204A2E6B00FB5C05 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B8B5F5F02065B7D000EE571F /* Utils */,
+				B8B5F5ED20645F6900EE571F /* Enuns */,
 				B8929FD7204A2E7F00FB5C05 /* Controllers */,
 				B8929FD5204A2E6400FB5C05 /* Model */,
 				B8E451DB2059DF2100FBBCCE /* Localizable.strings */,
@@ -151,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				B8929FB7204A2D9E00FB5C05 /* IntroController.swift */,
-				B8E451E12059E19300FBBCCE /* Utilites.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -190,6 +193,22 @@
 				B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */,
 			);
 			path = "App Managerment";
+			sourceTree = "<group>";
+		};
+		B8B5F5ED20645F6900EE571F /* Enuns */ = {
+			isa = PBXGroup;
+			children = (
+				B8B5F5EE20645FDE00EE571F /* AlertButtons.swift */,
+			);
+			path = Enuns;
+			sourceTree = "<group>";
+		};
+		B8B5F5F02065B7D000EE571F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B8E451E12059E19300FBBCCE /* Utilites.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +378,7 @@
 				B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */,
 				B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */,
 				B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */,
+				B8B5F5EF20645FDE00EE571F /* AlertButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

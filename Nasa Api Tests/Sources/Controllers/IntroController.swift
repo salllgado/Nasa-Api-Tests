@@ -30,17 +30,28 @@ class IntroController: UIViewController {
         signUpBtn.setTitle(utils.setLocalizableText("SIGNUP_BUTTON_TITLE"), for: .normal)
     }
     
-    @IBAction func actionSignIn(_ sender: Any) {
-        let alert = utils.buildAlert(title: "Titulo", mensage: "Mensagem", alertButtons: [.OK]) { (_) -> Void? in
-            print("Retornou aqui")
+    private func verifyFields() {
+        var alert: UIAlertController!
+        if utils.validateField([loginTf, passwordTf]) {
+            alert = utils.buildAlert(title: utils.setLocalizableText("LOGIN"), mensage: utils.setLocalizableText("SUCESS_LOGIN"), alertButtons: [.OK]) { (_) -> Void? in
+                // chamar aplicação
+                print("Retornou aqui")
+            }
+        }
+        else {
+            alert = utils.buildAlert(title: utils.setLocalizableText("LOGIN"), mensage: utils.setLocalizableText("ERROR_LOGIN"), alertButtons: [.DISMISS], completion: { (_) -> Void? in
+                return
+            })
         }
         present(alert, animated: true, completion: nil)
     }
     
-    @IBAction func actionSignUp(_ sender: Any) {
-        let alert = utils.buildAlert(title: "Titulo", mensage: "Mensagem", alertButtons: [.CANCEL, .OK]) { (_) -> Void? in
-            print("Retornou aqui")
-        }
-        present(alert, animated: true, completion: nil)
+    @IBAction func actionSignIn(_ sender: Any) {
+        verifyFields()
     }
+    
+    @IBAction func actionSignUp(_ sender: Any) {
+        // criar uma tela de signup
+    }
+        
 }

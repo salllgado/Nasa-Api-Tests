@@ -14,3 +14,7 @@
 "OK!" = "OK!";
 "CANCEL" = "Cancel";
 "DISMISS" = "Dismiss";
+"LOGIN" = "Login";
+"SIGNUP" = "SignUp";
+"ERROR_LOGIN" = "Error, verify your data and try again.";
+"SUCESS_LOGIN" = "Login sucessfully";
