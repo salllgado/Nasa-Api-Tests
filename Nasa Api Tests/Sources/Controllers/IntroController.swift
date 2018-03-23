@@ -32,16 +32,16 @@ class IntroController: UIViewController {
     
     private func verifyFields() {
         var alert: UIAlertController!
-        if utils.validateField([loginTf, passwordTf]) {
+        if utils.haveEmptyFields([loginTf, passwordTf]) {
+            alert = utils.buildAlert(title: utils.setLocalizableText("ERROR"), mensage: utils.setLocalizableText("ERROR_LOGIN"), alertButtons: [.DISMISS], completion: { (_) -> Void? in
+                return
+            })
+        }
+        else {
             alert = utils.buildAlert(title: utils.setLocalizableText("LOGIN"), mensage: utils.setLocalizableText("SUCESS_LOGIN"), alertButtons: [.OK]) { (_) -> Void? in
                 // chamar aplicação
                 print("Retornou aqui")
             }
-        }
-        else {
-            alert = utils.buildAlert(title: utils.setLocalizableText("LOGIN"), mensage: utils.setLocalizableText("ERROR_LOGIN"), alertButtons: [.DISMISS], completion: { (_) -> Void? in
-                return
-            })
         }
         present(alert, animated: true, completion: nil)
     }

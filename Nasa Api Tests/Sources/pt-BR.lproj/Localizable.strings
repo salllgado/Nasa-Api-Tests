@@ -18,4 +18,4 @@
 "SIGNUP" = "Cadastro";
 "ERROR_LOGIN" = "Erro ao realizar o login, verifique os dados";
 "SUCESS_LOGIN" = "Login efetuado com sucesso";
-
+"ERROR" = "Erro";

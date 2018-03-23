@@ -21,10 +21,10 @@ class Utilites {
                 }
                 alertBox.addAction(action)
             case .CANCEL:
-                let action = UIAlertAction(title: setLocalizableText("CANCEL"), style: .default) { (_) in }
+                let action = UIAlertAction(title: setLocalizableText("CANCEL"), style: .cancel) { (_) in }
                 alertBox.addAction(action)
             case .DISMISS:
-                let action = UIAlertAction(title: setLocalizableText("DISMISS"), style: .default) { (_) in }
+                let action = UIAlertAction(title: setLocalizableText("DISMISS"), style: .cancel) { (_) in }
                 alertBox.addAction(action)
             }
         }
@@ -40,16 +40,16 @@ class Utilites {
         return NSLocalizedString(text, comment: "")
     }
     
-    open func validateField(_ fields: [UITextField]) -> Bool {
-        var validateState: Bool = true
+    open func haveEmptyFields(_ fields: [UITextField]) -> Bool {
+        var emptyField: Bool!
         for field in fields {
             if let text = field.text {
                 if text.isEmpty || text == " " {
-                    validateState = false
+                    emptyField = true
                 }
             }
         }
-        return validateState == false ? validateState : true
+        return emptyField == true ? emptyField : false
     }
 }
 
