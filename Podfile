@@ -7,6 +7,7 @@ target 'Nasa Api Tests' do
 
   # Pods for Nasa Api Tests
    pod 'TPKeyboardAvoiding', :git => 'https://github.com/michaeltyson/TPKeyboardAvoiding.git'
+   pod 'CSUtils', :git => 'https://github.com/salllgado/CSUtils.git'
 
 
 end
