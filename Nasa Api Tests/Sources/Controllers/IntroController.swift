@@ -30,6 +30,7 @@ class IntroController: UIViewController {
         signUpBtn.setTitle(utils.setLocalizableText("SIGNUP_BUTTON_TITLE"), for: .normal)
     }
     
+<<<<<<< HEAD
     private func verifyFields() {
         var alert: UIAlertController!
         if utils.haveEmptyFields([loginTf, passwordTf]) {
@@ -42,8 +43,37 @@ class IntroController: UIViewController {
                 // chamar aplicação
                 print("Retornou aqui")
             }
+=======
+    private func validLogin()-> Bool {
+        if !verifyFields() {
+            let alert = utils.buildAlert(title: "ERROR", mensage: "LOGIN_ERROR_BLANK_FIELDS", alertButtons: [.DISMISS]) { (_) -> Void? in return }
+            present(alert, animated: true, completion: {
+                self.passwordTf.text = ""
+            })
         }
-        present(alert, animated: true, completion: nil)
+        
+    }
+    
+    private func verifyFields()-> Bool {
+        var isValid: Bool!
+        if (loginTf  != nil) && (passwordTf != nil) {
+            isValid = true
+        }
+        return isValid == true ? true : false
+    }
+    
+    private func validateUser()-> Bool {
+        //verificar se existe no CoreData os dados
+    }
+    
+    //MARK: Actions
+    
+    @IBAction func actionSignIn(_ sender: Any) {
+        if validLogin() {
+            // chamar menu
+            //salvar no userdefaults
+>>>>>>> apagar
+        }
     }
     
     @IBAction func actionSignIn(_ sender: Any) {
