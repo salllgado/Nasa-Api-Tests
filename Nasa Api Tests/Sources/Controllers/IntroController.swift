@@ -30,28 +30,25 @@ class IntroController: UIViewController {
         signUpBtn.setTitle(utils.setLocalizableText("SIGNUP_BUTTON_TITLE"), for: .normal)
     }
     
-<<<<<<< HEAD
-    private func verifyFields() {
-        var alert: UIAlertController!
-        if utils.haveEmptyFields([loginTf, passwordTf]) {
-            alert = utils.buildAlert(title: utils.setLocalizableText("ERROR"), mensage: utils.setLocalizableText("ERROR_LOGIN"), alertButtons: [.DISMISS], completion: { (_) -> Void? in
-                return
-            })
-        }
-        else {
-            alert = utils.buildAlert(title: utils.setLocalizableText("LOGIN"), mensage: utils.setLocalizableText("SUCESS_LOGIN"), alertButtons: [.OK]) { (_) -> Void? in
-                // chamar aplicação
-                print("Retornou aqui")
-            }
-=======
     private func validLogin()-> Bool {
         if !verifyFields() {
             let alert = utils.buildAlert(title: "ERROR", mensage: "LOGIN_ERROR_BLANK_FIELDS", alertButtons: [.DISMISS]) { (_) -> Void? in return }
             present(alert, animated: true, completion: {
                 self.passwordTf.text = ""
             })
+        return false
         }
         
+        if !validUser() {
+            let alert = utils.buildAlert(title: "ERROR", mensage: "LOGIN_ERROR_BLANK_FIELDS", alertButtons: [.DISMISS]) { (_) -> Void? in return }
+            present(alert, animated: true, completion: {
+                self.passwordTf.text = ""
+            })
+        return false
+        }
+        
+        // faz verificação no userdefauts
+        return true
     }
     
     private func verifyFields()-> Bool {
@@ -62,22 +59,18 @@ class IntroController: UIViewController {
         return isValid == true ? true : false
     }
     
-    private func validateUser()-> Bool {
+    private func validUser()-> Bool {
         //verificar se existe no CoreData os dados
+        return true
     }
     
     //MARK: Actions
     
     @IBAction func actionSignIn(_ sender: Any) {
         if validLogin() {
-            // chamar menu
-            //salvar no userdefaults
->>>>>>> apagar
+            //chamar menu
+            //salvar no userdefaults    
         }
-    }
-    
-    @IBAction func actionSignIn(_ sender: Any) {
-        verifyFields()
     }
     
     @IBAction func actionSignUp(_ sender: Any) {
