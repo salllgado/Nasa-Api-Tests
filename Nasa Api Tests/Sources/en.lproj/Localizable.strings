@@ -19,3 +19,6 @@
 "ERROR_LOGIN" = "Error, verify your data and try again.";
 "SUCESS_LOGIN" = "Login sucessfully";
 "ERROR" = "Error";
+"DADOS_CADASTRADOS_MENSAGEM" = "Your data has been saved, Return to login page, and authenticate with your login.";
+"DADOS_CADASTRADOS" = "Login has been saved.";
+"NOME_PLACEHOLDER" = "Name";

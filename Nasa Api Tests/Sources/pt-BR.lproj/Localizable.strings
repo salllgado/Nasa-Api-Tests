@@ -19,3 +19,7 @@
 "ERROR_LOGIN" = "Erro ao realizar o login, verifique os dados";
 "SUCESS_LOGIN" = "Login efetuado com sucesso";
 "ERROR" = "Erro";
+"DADOS_CADASTRADOS_MENSAGEM" = "Seus dados foram salvos, volte a tela de login, e identifique com seu novo login";
+"DADOS_CADASTRADOS" = "Dados Cadastrados com Sucesso";
+"NOME_PLACEHOLDER" = "Nome";
+

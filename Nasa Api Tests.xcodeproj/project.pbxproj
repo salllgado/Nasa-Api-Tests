@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		62646BE5442D792553D6C06A /* Pods_Nasa_Api_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78320130EC0D25D3DF657C6D /* Pods_Nasa_Api_Tests.framework */; };
+		B80471B42092BDC000805C00 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80471B32092BDC000805C00 /* SignupController.swift */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
 		B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* IntroController.swift */; };
 		B8929FBB204A2D9E00FB5C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FB9204A2D9E00FB5C05 /* Main.storyboard */; };
@@ -16,9 +17,7 @@
 		B8929FCB204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FCA204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift */; };
 		B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8929FDE204A2FCE00FB5C05 /* UserData.xcdatamodeld */; };
 		B8929FE2204A330E00FB5C05 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FE1204A330E00FB5C05 /* Menu.storyboard */; };
-		B8B5F5EF20645FDE00EE571F /* AlertButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B5F5EE20645FDE00EE571F /* AlertButtons.swift */; };
 		B8E451D92059DF2100FBBCCE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8E451DB2059DF2100FBBCCE /* Localizable.strings */; };
-		B8E451E22059E19300FBBCCE /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E451E12059E19300FBBCCE /* Utilites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +34,7 @@
 		36EF93A8ED32CA8EDC675C2A /* Pods-Nasa Api Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Api Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CC0A7FC015AB192845DEA85 /* Pods-Nasa Api Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Api Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests.release.xcconfig"; sourceTree = "<group>"; };
 		78320130EC0D25D3DF657C6D /* Pods_Nasa_Api_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Api_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80471B32092BDC000805C00 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		B8929FB2204A2D9E00FB5C05 /* Nasa Api Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Api Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8929FB7204A2D9E00FB5C05 /* IntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
@@ -47,13 +47,11 @@
 		B8929FCC204A2D9F00FB5C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8929FDF204A2FCE00FB5C05 /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
 		B8929FE1204A330E00FB5C05 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
-		B8B5F5EE20645FDE00EE571F /* AlertButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButtons.swift; sourceTree = "<group>"; };
 		B8E451DA2059DF2100FBBCCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B8E451DC2059DF8A00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		B8E451DD2059DF8B00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		B8E451DE2059DF8B00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B8E451E02059DFC400FBBCCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		B8E451E12059E19300FBBCCE /* Utilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				B8929FB7204A2D9E00FB5C05 /* IntroController.swift */,
+				B80471B32092BDC000805C00 /* SignupController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -198,7 +197,6 @@
 		B8B5F5ED20645F6900EE571F /* Enuns */ = {
 			isa = PBXGroup;
 			children = (
-				B8B5F5EE20645FDE00EE571F /* AlertButtons.swift */,
 			);
 			path = Enuns;
 			sourceTree = "<group>";
@@ -206,7 +204,6 @@
 		B8B5F5F02065B7D000EE571F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				B8E451E12059E19300FBBCCE /* Utilites.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -341,10 +338,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CSUtils/CSUtils.framework",
 				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSUtils.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,11 +373,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8E451E22059E19300FBBCCE /* Utilites.swift in Sources */,
 				B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */,
 				B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */,
 				B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */,
-				B8B5F5EF20645FDE00EE571F /* AlertButtons.swift in Sources */,
+				B80471B42092BDC000805C00 /* SignupController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CSUtils
 
 class IntroController: UIViewController {
+    
 
     @IBOutlet weak var loginTf: UITextField!
     @IBOutlet weak var passwordTf: UITextField!
@@ -16,35 +18,35 @@ class IntroController: UIViewController {
     @IBOutlet weak var signInBtn: UIButton!
     @IBOutlet weak var signUpBtn: UIButton!
     
-    fileprivate var utils = Utilites()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Adiciona um titulo ao navigation bar
-        title = utils.setLocalizableText("WELLCOME")
+        title = CSUtils.getLocalizableString("WELLCOME")
         
-        loginTf.placeholder = utils.setLocalizableText("EMAIL_PLACEHOLDER")
-        passwordTf.placeholder = utils.setLocalizableText("PASSWORD_PLACEHOLDER")
-        signInBtn.setTitle(utils.setLocalizableText("SIGNIN_BUTTON_TITLE"), for: .normal)
-        signUpBtn.setTitle(utils.setLocalizableText("SIGNUP_BUTTON_TITLE"), for: .normal)
+        loginTf.placeholder = CSUtils.getLocalizableString("EMAIL_PLACEHOLDER")
+        passwordTf.placeholder = CSUtils.getLocalizableString("PASSWORD_PLACEHOLDER")
+        
+        signInBtn.setTitle(CSUtils.getLocalizableString("SIGNIN_BUTTON_TITLE"), for: .normal)
+        signUpBtn.setTitle(CSUtils.getLocalizableString("SIGNUP_BUTTON_TITLE"), for: .normal)
     }
     
     private func validLogin()-> Bool {
         if !verifyFields() {
-            let alert = utils.buildAlert(title: "ERROR", mensage: "LOGIN_ERROR_BLANK_FIELDS", alertButtons: [.DISMISS]) { (_) -> Void? in return }
+            let alert = CSUtils.showAlertController("ERROR", mensage: "LOGIN_ERROR_BLANK_FIELDS", alertButtons: [.DISMISS]) { (_) -> Void? in
+                return }
             present(alert, animated: true, completion: {
                 self.passwordTf.text = ""
             })
-        return false
+            return false
         }
         
         if !validUser() {
-            let alert = utils.buildAlert(title: "ERROR", mensage: "LOGIN_ERROR_BLANK_FIELDS", alertButtons: [.DISMISS]) { (_) -> Void? in return }
+            let alert = CSUtils.showAlertController("ERROR", mensage: "LOGIN_ERROR_BLANK_FIELDS", alertButtons: [.DISMISS]) { (_) -> Void? in return }
             present(alert, animated: true, completion: {
                 self.passwordTf.text = ""
             })
-        return false
+            return false
         }
         
         // faz verificação no userdefauts
@@ -53,10 +55,10 @@ class IntroController: UIViewController {
     
     private func verifyFields()-> Bool {
         var isValid: Bool!
-        if (loginTf  != nil) && (passwordTf != nil) {
-            isValid = true
+        if (loginTf.text  == nil || loginTf.text == "") || (passwordTf.text == nil || passwordTf.text == "") {
+            isValid = false
         }
-        return isValid == true ? true : false
+        return isValid == false ? false : true
     }
     
     private func validUser()-> Bool {
