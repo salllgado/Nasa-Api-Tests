@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		62646BE5442D792553D6C06A /* Pods_Nasa_Api_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78320130EC0D25D3DF657C6D /* Pods_Nasa_Api_Tests.framework */; };
 		B80471B42092BDC000805C00 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80471B32092BDC000805C00 /* SignupController.swift */; };
+		B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
 		B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* IntroController.swift */; };
 		B8929FBB204A2D9E00FB5C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FB9204A2D9E00FB5C05 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		5CC0A7FC015AB192845DEA85 /* Pods-Nasa Api Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Api Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests.release.xcconfig"; sourceTree = "<group>"; };
 		78320130EC0D25D3DF657C6D /* Pods_Nasa_Api_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Api_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80471B32092BDC000805C00 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8929FB2204A2D9E00FB5C05 /* Nasa Api Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Api Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8929FB7204A2D9E00FB5C05 /* IntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		B8929FB4204A2D9E00FB5C05 /* Nasa Api Tests */ = {
 			isa = PBXGroup;
 			children = (
+				B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */,
 				B8929FDB204A2EC200FB5C05 /* App Managerment */,
 				B8929FD8204A2E9000FB5C05 /* Resources */,
 				B8929FD6204A2E6B00FB5C05 /* Sources */,
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8929FE2204A330E00FB5C05 /* Menu.storyboard in Resources */,
+				B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */,
 				B8929FC0204A2D9E00FB5C05 /* LaunchScreen.storyboard in Resources */,
 				B8E451D92059DF2100FBBCCE /* Localizable.strings in Resources */,
 				B8929FBD204A2D9E00FB5C05 /* Assets.xcassets in Resources */,
@@ -339,12 +343,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CSUtils/CSUtils.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSUtils.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

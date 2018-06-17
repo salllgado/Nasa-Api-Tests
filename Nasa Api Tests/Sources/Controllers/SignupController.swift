@@ -30,7 +30,11 @@ class SignupController: UIViewController {
     
     // MARK: Actions
     @IBAction func actionConfirm(_ sender: Any) {
-        CSUtils.showAlertController("DADOS_CADASTRADOS", mensage: "DADOS_CADASTRADOS_MENSAGEM", alertButtons: [.OK], completion: in return)
+//        CSUtils.showAlertController("DADOS_CADASTRADOS", mensage: "DADOS_CADASTRADOS_MENSAGEM", alertButtons: [.OK], completion: in return)
+        CSUtils.showAlertController("Dados cadastrados", mensage: "Dados cadastrados mensagem", alertButtons: [.OK]) { (_) -> Void? in
+            // ...
+            return
+        }
     }
     
 }
