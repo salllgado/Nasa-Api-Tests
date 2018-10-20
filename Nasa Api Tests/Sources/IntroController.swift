@@ -20,15 +20,11 @@ class IntroController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Adiciona um titulo ao navigation bar
-        title = CSUtils.getLocalizableString("WELLCOME")
-        
-        loginTf.placeholder = CSUtils.getLocalizableString("EMAIL_PLACEHOLDER")
-        passwordTf.placeholder = CSUtils.getLocalizableString("PASSWORD_PLACEHOLDER")
-        
-        signInBtn.setTitle(CSUtils.getLocalizableString("SIGNIN_BUTTON_TITLE"), for: .normal)
-        signUpBtn.setTitle(CSUtils.getLocalizableString("SIGNUP_BUTTON_TITLE"), for: .normal)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configureStyles()
     }
     
     private func validLogin()-> Bool {
@@ -67,16 +63,29 @@ class IntroController: UIViewController {
     }
     
     //MARK: Actions
-    
     @IBAction func actionSignIn(_ sender: Any) {
         if validLogin() {
             //chamar menu
-            //salvar no userdefaults    
+            //salvar no userdefaults
+            
         }
     }
     
     @IBAction func actionSignUp(_ sender: Any) {
         // criar uma tela de signup
     }
+}
+
+extension IntroController {
+    fileprivate func configureStyles() {
         
+        // Adiciona um titulo ao navigation bar
+        title = CSUtils.getLocalizableString("WELLCOME")
+        
+        loginTf.placeholder = CSUtils.getLocalizableString("EMAIL_PLACEHOLDER")
+        passwordTf.placeholder = CSUtils.getLocalizableString("PASSWORD_PLACEHOLDER")
+        
+        signInBtn.setTitle(CSUtils.getLocalizableString("SIGNIN_BUTTON_TITLE"), for: .normal)
+        signUpBtn.setTitle(CSUtils.getLocalizableString("SIGNUP_BUTTON_TITLE"), for: .normal)
+    }
 }

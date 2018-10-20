@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pKQ-m5-DZZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pKQ-m5-DZZ">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -67,7 +66,7 @@
                                                         <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bMB-MB-7BS">
-                                                        <rect key="frame" x="43" y="168" width="288" height="96"/>
+                                                        <rect key="frame" x="43.666666666666657" y="168" width="288" height="96"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qam-m9-nqW">
                                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
@@ -190,7 +189,7 @@
                                                 <rect key="frame" x="16" y="32" width="343" height="120"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" image="nasa_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ic1-VN-wOS">
-                                                        <rect key="frame" x="111.66666666666669" y="0.0" width="120.33333333333331" height="120"/>
+                                                        <rect key="frame" x="111.66666666666669" y="0.0" width="120" height="120"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ic1-VN-wOS" secondAttribute="height" multiplier="1:1" id="OGm-K2-Eqq"/>
                                                             <constraint firstAttribute="height" constant="120" id="b1O-iH-V9t"/>
@@ -243,7 +242,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MGU-OU-gzk">
-                                                        <rect key="frame" x="43.333333333333343" y="228" width="288" height="44"/>
+                                                        <rect key="frame" x="43.666666666666657" y="228" width="288" height="44"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFu-eE-chv">
                                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
@@ -322,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYG-eb-7ab" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1529" y="134"/>
+            <point key="canvasLocation" x="1434" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OXi-Qn-3Cd">

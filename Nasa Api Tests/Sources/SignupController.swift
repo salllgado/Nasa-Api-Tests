@@ -19,6 +19,11 @@ class SignupController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         // define os estilos ao carregar a view
         configureStyles()
     }
@@ -27,20 +32,25 @@ class SignupController: UIViewController {
         
     }
     
-    
     // MARK: Actions
     @IBAction func actionConfirm(_ sender: Any) {
-//        CSUtils.showAlertController("DADOS_CADASTRADOS", mensage: "DADOS_CADASTRADOS_MENSAGEM", alertButtons: [.OK], completion: in return)
+        guard let userLogin = self.userLoginTf.text, let userPassword = self.userPasswordTf.text, let userName = self.userNameTf.text else {
+            return
+        }
+        CoreDataHelper().saveData(in: "User", values: [
+            "email": userLogin,
+            "password": userPassword,
+            "name": userName
+            ])
+        
         CSUtils.showAlertController("Dados cadastrados", mensage: "Dados cadastrados mensagem", alertButtons: [.OK]) { (_) -> Void? in
             // ...
             return
         }
     }
-    
 }
 
 extension SignupController {
-    
     fileprivate func configureStyles() {
         userNameTf.placeholder = CSUtils.getLocalizableString("NOME_PLACEHOLDER")
         userLoginTf.placeholder = CSUtils.getLocalizableString("EMAIL_PLACEHOLDER")

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		62646BE5442D792553D6C06A /* Pods_Nasa_Api_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78320130EC0D25D3DF657C6D /* Pods_Nasa_Api_Tests.framework */; };
 		B80471B42092BDC000805C00 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80471B32092BDC000805C00 /* SignupController.swift */; };
+		B823BA362175642100FF1EF2 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B823BA352175642100FF1EF2 /* CoreDataHelper.swift */; };
 		B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
 		B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* IntroController.swift */; };
@@ -36,6 +37,7 @@
 		5CC0A7FC015AB192845DEA85 /* Pods-Nasa Api Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Api Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests.release.xcconfig"; sourceTree = "<group>"; };
 		78320130EC0D25D3DF657C6D /* Pods_Nasa_Api_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Api_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80471B32092BDC000805C00 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		B823BA352175642100FF1EF2 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8929FB2204A2D9E00FB5C05 /* Nasa Api Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Api Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,33 +134,15 @@
 			path = "Nasa Api TestsUITests";
 			sourceTree = "<group>";
 		};
-		B8929FD5204A2E6400FB5C05 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		B8929FD6204A2E6B00FB5C05 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B8B5F5F02065B7D000EE571F /* Utils */,
-				B8B5F5ED20645F6900EE571F /* Enuns */,
-				B8929FD7204A2E7F00FB5C05 /* Controllers */,
-				B8929FD5204A2E6400FB5C05 /* Model */,
+				B8B208772174A5DF002321BD /* Helpers */,
+				B8B208762174A5DA002321BD /* Controllers */,
+				B8B208752174A5CB002321BD /* Models */,
 				B8E451DB2059DF2100FBBCCE /* Localizable.strings */,
-				B8929FDE204A2FCE00FB5C05 /* UserData.xcdatamodeld */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		B8929FD7204A2E7F00FB5C05 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				B8929FB7204A2D9E00FB5C05 /* IntroController.swift */,
-				B80471B32092BDC000805C00 /* SignupController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B8929FD8204A2E9000FB5C05 /* Resources */ = {
@@ -197,18 +181,29 @@
 			path = "App Managerment";
 			sourceTree = "<group>";
 		};
-		B8B5F5ED20645F6900EE571F /* Enuns */ = {
+		B8B208752174A5CB002321BD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B8929FDE204A2FCE00FB5C05 /* UserData.xcdatamodeld */,
 			);
-			path = Enuns;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		B8B5F5F02065B7D000EE571F /* Utils */ = {
+		B8B208762174A5DA002321BD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B8929FB7204A2D9E00FB5C05 /* IntroController.swift */,
+				B80471B32092BDC000805C00 /* SignupController.swift */,
 			);
-			path = Utils;
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B8B208772174A5DF002321BD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B823BA352175642100FF1EF2 /* CoreDataHelper.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B823BA362175642100FF1EF2 /* CoreDataHelper.swift in Sources */,
 				B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */,
 				B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */,
 				B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */,
