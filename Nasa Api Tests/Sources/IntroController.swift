@@ -11,7 +11,6 @@ import CSUtils
 
 class IntroController: UIViewController {
     
-
     @IBOutlet weak var loginTf: UITextField!
     @IBOutlet weak var passwordTf: UITextField!
     
@@ -30,7 +29,8 @@ class IntroController: UIViewController {
     private func validLogin()-> Bool {
         if !verifyFields() {
             let alert = CSUtils.showAlertController("ERROR", mensage: "LOGIN_ERROR_BLANK_FIELDS", alertButtons: [.DISMISS]) { (_) -> Void? in
-                return }
+                return
+            }
             present(alert, animated: true, completion: {
                 self.passwordTf.text = ""
             })
@@ -58,16 +58,27 @@ class IntroController: UIViewController {
     }
     
     private func validUser()-> Bool {
-        //verificar se existe no CoreData os dados
-        return true
+        if let responseData = CoreDataHelper().fetchData(from: "User") {
+            for user in responseData {
+                if let userEmail = user.value(forKey: "email") as? String, let userPassword = user.value(forKey: "password") as? String {
+                    if userEmail == self.loginTf.text && userPassword == self.passwordTf.text {
+                        return true
+                    }
+                }
+            }
+        }
+        return false
     }
     
     //MARK: Actions
     @IBAction func actionSignIn(_ sender: Any) {
         if validLogin() {
             //chamar menu
-            //salvar no userdefaults
             
+            let storyboard = UIStoryboard.init(name: "Menu", bundle: Bundle(for: self.classForCoder))
+            if let introViewController = storyboard.instantiateViewController(withIdentifier: "instantiateMenuController") as? MenuController {
+                self.navigationController?.pushViewController(introViewController, animated: true)
+            }
         }
     }
     

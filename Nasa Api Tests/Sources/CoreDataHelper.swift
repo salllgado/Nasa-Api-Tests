@@ -21,19 +21,14 @@ class CoreDataHelper {
     }
     
     open func saveData(in entityName: String, values: [String: String]) {
-        
         guard let context = appDelegate?.persistenContainer.viewContext else {
             return
         }
         
-        guard let entity = NSEntityDescription.entity(forEntityName: entityName, in: context) else {
-            return
-        }
-        
-        let entityObject = NSManagedObject(entity: entity, insertInto: context)
+        let entityNewObject = NSEntityDescription.insertNewObject(forEntityName: entityName, into: context)
         
         for value in values.enumerated() {
-            entityObject.setValue(value.element.value, forKey: value.element.key)
+            entityNewObject.setValue(value.element.value, forKey: value.element.key)
         }
         
         // 4
@@ -42,6 +37,23 @@ class CoreDataHelper {
             print(values)
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    open func fetchData(from entity: String) -> [NSManagedObject]? {
+        guard let context = appDelegate?.persistenContainer.viewContext else {
+            return nil
+        }
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entity)
+        
+        do {
+            let response = try context.fetch(fetchRequest)
+            return response
+        } catch {
+            let error = error as NSError
+            print("Eror while load data from CoreData \(error)")
+            return nil
         }
     }
 }

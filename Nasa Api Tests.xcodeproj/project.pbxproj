@@ -19,6 +19,7 @@
 		B8929FCB204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FCA204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift */; };
 		B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8929FDE204A2FCE00FB5C05 /* UserData.xcdatamodeld */; };
 		B8929FE2204A330E00FB5C05 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FE1204A330E00FB5C05 /* Menu.storyboard */; };
+		B8BF13C9217CFF0500E31C90 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF13C8217CFF0500E31C90 /* MenuController.swift */; };
 		B8E451D92059DF2100FBBCCE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8E451DB2059DF2100FBBCCE /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		B8929FCC204A2D9F00FB5C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8929FDF204A2FCE00FB5C05 /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
 		B8929FE1204A330E00FB5C05 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		B8BF13C8217CFF0500E31C90 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		B8E451DA2059DF2100FBBCCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B8E451DC2059DF8A00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		B8E451DD2059DF8B00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			children = (
 				B8929FB7204A2D9E00FB5C05 /* IntroController.swift */,
 				B80471B32092BDC000805C00 /* SignupController.swift */,
+				B8BF13C8217CFF0500E31C90 /* MenuController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */,
 				B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */,
 				B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */,
+				B8BF13C9217CFF0500E31C90 /* MenuController.swift in Sources */,
 				B80471B42092BDC000805C00 /* SignupController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
