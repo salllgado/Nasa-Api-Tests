@@ -20,7 +20,7 @@ class CoreDataHelper {
         }
     }
     
-    open func saveData(in entityName: String, values: [String: String]) {
+    open func saveData(in entityName: String, values: [String: String], completion: @escaping (_ sucess: Bool?, _ error: NSError?)->Void?) {
         guard let context = appDelegate?.persistenContainer.viewContext else {
             return
         }
@@ -34,13 +34,14 @@ class CoreDataHelper {
         // 4
         do {
             try context.save()
-            print(values)
+            completion(true, nil)
         } catch let error as NSError {
+            completion(false, error)
             print("Could not save. \(error), \(error.userInfo)")
         }
     }
     
-    open func fetchData(from entity: String) -> [NSManagedObject]? {
+    open func fetchData(from entity: String, completion: @escaping (_ sucess: Bool?, _ error: NSError?)->Void?) -> [NSManagedObject]? {
         guard let context = appDelegate?.persistenContainer.viewContext else {
             return nil
         }

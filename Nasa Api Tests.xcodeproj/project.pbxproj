@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		62646BE5442D792553D6C06A /* Pods_Nasa_Api_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78320130EC0D25D3DF657C6D /* Pods_Nasa_Api_Tests.framework */; };
 		B80471B42092BDC000805C00 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80471B32092BDC000805C00 /* SignupController.swift */; };
+		B82089EB218086F400A8C6FE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82089EA218086F400A8C6FE /* CoreDataManager.swift */; };
+		B82089EE2180887400A8C6FE /* SignedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82089ED2180887400A8C6FE /* SignedUser.swift */; };
+		B82089F1218088B200A8C6FE /* SignedUserable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82089F0218088B200A8C6FE /* SignedUserable.swift */; };
+		B82089F3218089E400A8C6FE /* EntitySignedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82089F2218089E400A8C6FE /* EntitySignedUser.swift */; };
 		B823BA362175642100FF1EF2 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B823BA352175642100FF1EF2 /* CoreDataHelper.swift */; };
 		B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
@@ -38,6 +42,10 @@
 		5CC0A7FC015AB192845DEA85 /* Pods-Nasa Api Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Api Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests.release.xcconfig"; sourceTree = "<group>"; };
 		78320130EC0D25D3DF657C6D /* Pods_Nasa_Api_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Api_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80471B32092BDC000805C00 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		B82089EA218086F400A8C6FE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		B82089ED2180887400A8C6FE /* SignedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedUser.swift; sourceTree = "<group>"; };
+		B82089F0218088B200A8C6FE /* SignedUserable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedUserable.swift; sourceTree = "<group>"; };
+		B82089F2218089E400A8C6FE /* EntitySignedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitySignedUser.swift; sourceTree = "<group>"; };
 		B823BA352175642100FF1EF2 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8929FB2204A2D9E00FB5C05 /* Nasa Api Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Api Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +104,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B82089E9218086C900A8C6FE /* Entity Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B82089F2218089E400A8C6FE /* EntitySignedUser.swift */,
+			);
+			name = "Entity Objects";
+			sourceTree = "<group>";
+		};
+		B82089EC2180885E00A8C6FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B82089ED2180887400A8C6FE /* SignedUser.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B82089EF218088A400A8C6FE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B82089F0218088B200A8C6FE /* SignedUserable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		B8929FA9204A2D9E00FB5C05 = {
 			isa = PBXGroup;
 			children = (
@@ -139,9 +171,12 @@
 		B8929FD6204A2E6B00FB5C05 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B82089EF218088A400A8C6FE /* Protocols */,
+				B82089EC2180885E00A8C6FE /* Model */,
+				B82089E9218086C900A8C6FE /* Entity Objects */,
 				B8B208772174A5DF002321BD /* Helpers */,
 				B8B208762174A5DA002321BD /* Controllers */,
-				B8B208752174A5CB002321BD /* Models */,
+				B8B208752174A5CB002321BD /* CoreData */,
 				B8E451DB2059DF2100FBBCCE /* Localizable.strings */,
 			);
 			path = Sources;
@@ -183,12 +218,14 @@
 			path = "App Managerment";
 			sourceTree = "<group>";
 		};
-		B8B208752174A5CB002321BD /* Models */ = {
+		B8B208752174A5CB002321BD /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				B82089EA218086F400A8C6FE /* CoreDataManager.swift */,
+				B823BA352175642100FF1EF2 /* CoreDataHelper.swift */,
 				B8929FDE204A2FCE00FB5C05 /* UserData.xcdatamodeld */,
 			);
-			name = Models;
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 		B8B208762174A5DA002321BD /* Controllers */ = {
@@ -204,7 +241,6 @@
 		B8B208772174A5DF002321BD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				B823BA352175642100FF1EF2 /* CoreDataHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -384,8 +420,12 @@
 				B823BA362175642100FF1EF2 /* CoreDataHelper.swift in Sources */,
 				B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */,
 				B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */,
+				B82089F1218088B200A8C6FE /* SignedUserable.swift in Sources */,
 				B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */,
+				B82089F3218089E400A8C6FE /* EntitySignedUser.swift in Sources */,
+				B82089EE2180887400A8C6FE /* SignedUser.swift in Sources */,
 				B8BF13C9217CFF0500E31C90 /* MenuController.swift in Sources */,
+				B82089EB218086F400A8C6FE /* CoreDataManager.swift in Sources */,
 				B80471B42092BDC000805C00 /* SignupController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
