@@ -35,6 +35,7 @@
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
+                                                <color key="backgroundColor" red="0.27840715646743774" green="0.39733573794364929" blue="0.68657046556472778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="x5P-fn-xzo" secondAttribute="bottom" id="CEZ-DN-3JA"/>
                                                     <constraint firstItem="x5P-fn-xzo" firstAttribute="top" secondItem="LQj-zr-FB4" secondAttribute="top" id="JIS-SY-2ul"/>

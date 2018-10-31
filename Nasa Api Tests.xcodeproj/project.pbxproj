@@ -14,6 +14,7 @@
 		B82089F1218088B200A8C6FE /* SignedUserable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82089F0218088B200A8C6FE /* SignedUserable.swift */; };
 		B82089F3218089E400A8C6FE /* EntitySignedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82089F2218089E400A8C6FE /* EntitySignedUser.swift */; };
 		B823BA362175642100FF1EF2 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B823BA352175642100FF1EF2 /* CoreDataHelper.swift */; };
+		B84510EE2189CC89008904A5 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84510F02189CC8A008904A5 /* Menu.storyboard */; };
 		B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
 		B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* IntroController.swift */; };
@@ -22,7 +23,6 @@
 		B8929FC0204A2D9E00FB5C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FBE204A2D9E00FB5C05 /* LaunchScreen.storyboard */; };
 		B8929FCB204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FCA204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift */; };
 		B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8929FDE204A2FCE00FB5C05 /* UserData.xcdatamodeld */; };
-		B8929FE2204A330E00FB5C05 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FE1204A330E00FB5C05 /* Menu.storyboard */; };
 		B8BF13C9217CFF0500E31C90 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF13C8217CFF0500E31C90 /* MenuController.swift */; };
 		B8E451D92059DF2100FBBCCE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8E451DB2059DF2100FBBCCE /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -47,6 +47,8 @@
 		B82089F0218088B200A8C6FE /* SignedUserable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedUserable.swift; sourceTree = "<group>"; };
 		B82089F2218089E400A8C6FE /* EntitySignedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitySignedUser.swift; sourceTree = "<group>"; };
 		B823BA352175642100FF1EF2 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		B84510EF2189CC8A008904A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Menu.storyboard; sourceTree = "<group>"; };
+		B84510F22189CCA1008904A5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Menu.strings"; sourceTree = "<group>"; };
 		B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8929FB2204A2D9E00FB5C05 /* Nasa Api Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Api Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +61,6 @@
 		B8929FCA204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_Api_TestsUITests.swift; sourceTree = "<group>"; };
 		B8929FCC204A2D9F00FB5C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8929FDF204A2FCE00FB5C05 /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
-		B8929FE1204A330E00FB5C05 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		B8BF13C8217CFF0500E31C90 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		B8E451DA2059DF2100FBBCCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B8E451DC2059DF8A00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -204,7 +205,7 @@
 			children = (
 				B8929FB9204A2D9E00FB5C05 /* Main.storyboard */,
 				B8929FBE204A2D9E00FB5C05 /* LaunchScreen.storyboard */,
-				B8929FE1204A330E00FB5C05 /* Menu.storyboard */,
+				B84510F02189CC8A008904A5 /* Menu.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,7 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8929FE2204A330E00FB5C05 /* Menu.storyboard in Resources */,
+				B84510EE2189CC89008904A5 /* Menu.storyboard in Resources */,
 				B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */,
 				B8929FC0204A2D9E00FB5C05 /* LaunchScreen.storyboard in Resources */,
 				B8E451D92059DF2100FBBCCE /* Localizable.strings in Resources */,
@@ -449,6 +450,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B84510F02189CC8A008904A5 /* Menu.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B84510EF2189CC8A008904A5 /* Base */,
+				B84510F22189CCA1008904A5 /* pt-BR */,
+			);
+			name = Menu.storyboard;
+			sourceTree = "<group>";
+		};
 		B8929FB9204A2D9E00FB5C05 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
