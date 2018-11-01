@@ -35,7 +35,6 @@
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.27840715646743774" green="0.39733573794364929" blue="0.68657046556472778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="x5P-fn-xzo" secondAttribute="bottom" id="CEZ-DN-3JA"/>
                                                     <constraint firstItem="x5P-fn-xzo" firstAttribute="top" secondItem="LQj-zr-FB4" secondAttribute="top" id="JIS-SY-2ul"/>
@@ -141,13 +140,13 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.39329168339999998" green="0.56974949770000005" blue="1" alpha="0.67623608729999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.39215686274509803" green="0.56862745098039214" blue="1" alpha="0.67623608729999996" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Gpo-st-Jtd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0Rp-uF-ZhL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gpo-st-Jtd" secondAttribute="bottom" id="Op5-Kc-9iV"/>
-                            <constraint firstItem="7Yc-Bl-X1l" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Rht-Fi-fqx"/>
                             <constraint firstItem="Gpo-st-Jtd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tff-Yo-BPQ"/>
                             <constraint firstItem="Gpo-st-Jtd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cBH-zS-c3F"/>
+                            <constraint firstItem="7Yc-Bl-X1l" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="gEQ-H6-Sap"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -15,6 +15,12 @@
 		B82089F3218089E400A8C6FE /* EntitySignedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82089F2218089E400A8C6FE /* EntitySignedUser.swift */; };
 		B823BA362175642100FF1EF2 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B823BA352175642100FF1EF2 /* CoreDataHelper.swift */; };
 		B84510EE2189CC89008904A5 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84510F02189CC8A008904A5 /* Menu.storyboard */; };
+		B85C6098218A7B2B0009E58B /* ListOfLinks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85C6097218A7B2B0009E58B /* ListOfLinks.storyboard */; };
+		B85C609B218A7E660009E58B /* LinkListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C609A218A7E660009E58B /* LinkListCell.swift */; };
+		B85C609D218A7F240009E58B /* LinkListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C609C218A7F240009E58B /* LinkListController.swift */; };
+		B85C609F218A874A0009E58B /* NasaFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C609E218A874A0009E58B /* NasaFeedModel.swift */; };
+		B85C60A1218A8F400009E58B /* LinkDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C60A0218A8F400009E58B /* LinkDetailController.swift */; };
+		B85C60A4218A95DE0009E58B /* AsteroidsFeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C60A3218A95DE0009E58B /* AsteroidsFeedResponse.swift */; };
 		B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
 		B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* IntroController.swift */; };
@@ -49,6 +55,12 @@
 		B823BA352175642100FF1EF2 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		B84510EF2189CC8A008904A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Menu.storyboard; sourceTree = "<group>"; };
 		B84510F22189CCA1008904A5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Menu.strings"; sourceTree = "<group>"; };
+		B85C6097218A7B2B0009E58B /* ListOfLinks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfLinks.storyboard; sourceTree = "<group>"; };
+		B85C609A218A7E660009E58B /* LinkListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListCell.swift; sourceTree = "<group>"; };
+		B85C609C218A7F240009E58B /* LinkListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListController.swift; sourceTree = "<group>"; };
+		B85C609E218A874A0009E58B /* NasaFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaFeedModel.swift; sourceTree = "<group>"; };
+		B85C60A0218A8F400009E58B /* LinkDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDetailController.swift; sourceTree = "<group>"; };
+		B85C60A3218A95DE0009E58B /* AsteroidsFeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsFeedResponse.swift; sourceTree = "<group>"; };
 		B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8929FB2204A2D9E00FB5C05 /* Nasa Api Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Api Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				B82089ED2180887400A8C6FE /* SignedUser.swift */,
+				B85C609E218A874A0009E58B /* NasaFeedModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -127,6 +140,22 @@
 				B82089F0218088B200A8C6FE /* SignedUserable.swift */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		B85C6099218A7E400009E58B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B85C609A218A7E660009E58B /* LinkListCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B85C60A2218A95A10009E58B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B85C60A3218A95DE0009E58B /* AsteroidsFeedResponse.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		B8929FA9204A2D9E00FB5C05 = {
@@ -153,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */,
-				B8929FDB204A2EC200FB5C05 /* App Managerment */,
+				B8929FDB204A2EC200FB5C05 /* Other Sources */,
 				B8929FD8204A2E9000FB5C05 /* Resources */,
 				B8929FD6204A2E6B00FB5C05 /* Sources */,
 			);
@@ -172,13 +201,14 @@
 		B8929FD6204A2E6B00FB5C05 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B85C60A2218A95A10009E58B /* Network */,
+				B85C6099218A7E400009E58B /* View */,
 				B82089EF218088A400A8C6FE /* Protocols */,
 				B82089EC2180885E00A8C6FE /* Model */,
 				B82089E9218086C900A8C6FE /* Entity Objects */,
 				B8B208772174A5DF002321BD /* Helpers */,
 				B8B208762174A5DA002321BD /* Controllers */,
 				B8B208752174A5CB002321BD /* CoreData */,
-				B8E451DB2059DF2100FBBCCE /* Localizable.strings */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -186,7 +216,10 @@
 		B8929FD8204A2E9000FB5C05 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B8929FDA204A2EA500FB5C05 /* View */,
+				B8929FB9204A2D9E00FB5C05 /* Main.storyboard */,
+				B8929FBE204A2D9E00FB5C05 /* LaunchScreen.storyboard */,
+				B84510F02189CC8A008904A5 /* Menu.storyboard */,
+				B85C6097218A7B2B0009E58B /* ListOfLinks.storyboard */,
 				B8929FD9204A2E9E00FB5C05 /* Media */,
 			);
 			path = Resources;
@@ -200,23 +233,14 @@
 			path = Media;
 			sourceTree = "<group>";
 		};
-		B8929FDA204A2EA500FB5C05 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B8929FB9204A2D9E00FB5C05 /* Main.storyboard */,
-				B8929FBE204A2D9E00FB5C05 /* LaunchScreen.storyboard */,
-				B84510F02189CC8A008904A5 /* Menu.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B8929FDB204A2EC200FB5C05 /* App Managerment */ = {
+		B8929FDB204A2EC200FB5C05 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
 				B8929FC1204A2D9E00FB5C05 /* Info.plist */,
 				B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */,
+				B8E451DB2059DF2100FBBCCE /* Localizable.strings */,
 			);
-			path = "App Managerment";
+			path = "Other Sources";
 			sourceTree = "<group>";
 		};
 		B8B208752174A5CB002321BD /* CoreData */ = {
@@ -235,6 +259,8 @@
 				B8929FB7204A2D9E00FB5C05 /* IntroController.swift */,
 				B80471B32092BDC000805C00 /* SignupController.swift */,
 				B8BF13C8217CFF0500E31C90 /* MenuController.swift */,
+				B85C609C218A7F240009E58B /* LinkListController.swift */,
+				B85C60A0218A8F400009E58B /* LinkDetailController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -337,6 +363,7 @@
 				B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */,
 				B8929FC0204A2D9E00FB5C05 /* LaunchScreen.storyboard in Resources */,
 				B8E451D92059DF2100FBBCCE /* Localizable.strings in Resources */,
+				B85C6098218A7B2B0009E58B /* ListOfLinks.storyboard in Resources */,
 				B8929FBD204A2D9E00FB5C05 /* Assets.xcassets in Resources */,
 				B8929FBB204A2D9E00FB5C05 /* Main.storyboard in Resources */,
 			);
@@ -419,15 +446,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B823BA362175642100FF1EF2 /* CoreDataHelper.swift in Sources */,
+				B85C60A4218A95DE0009E58B /* AsteroidsFeedResponse.swift in Sources */,
 				B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */,
 				B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */,
+				B85C609F218A874A0009E58B /* NasaFeedModel.swift in Sources */,
 				B82089F1218088B200A8C6FE /* SignedUserable.swift in Sources */,
 				B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */,
+				B85C609D218A7F240009E58B /* LinkListController.swift in Sources */,
 				B82089F3218089E400A8C6FE /* EntitySignedUser.swift in Sources */,
+				B85C60A1218A8F400009E58B /* LinkDetailController.swift in Sources */,
 				B82089EE2180887400A8C6FE /* SignedUser.swift in Sources */,
 				B8BF13C9217CFF0500E31C90 /* MenuController.swift in Sources */,
 				B82089EB218086F400A8C6FE /* CoreDataManager.swift in Sources */,
 				B80471B42092BDC000805C00 /* SignupController.swift in Sources */,
+				B85C609B218A7E660009E58B /* LinkListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +638,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HT3YCTX6YE;
-				INFOPLIST_FILE = "$(SRCROOT)/Nasa Api Tests/App Managerment/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Nasa Api Tests/Other Sources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "salgadosProductions.Nasa-Api-Tests";
@@ -623,7 +655,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HT3YCTX6YE;
-				INFOPLIST_FILE = "$(SRCROOT)/Nasa Api Tests/App Managerment/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Nasa Api Tests/Other Sources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "salgadosProductions.Nasa-Api-Tests";

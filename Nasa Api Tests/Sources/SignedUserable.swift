@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol SignedUserable {
-    var userName: String
-    var userEmail: String
-    var userPassword: String
+    var userName: String { get set }
+    var userEmail: String { get set }
+    var userPassword: String { get set }
 }

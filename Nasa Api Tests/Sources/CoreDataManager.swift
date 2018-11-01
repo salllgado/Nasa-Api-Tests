@@ -7,18 +7,27 @@
 //
 
 import Foundation
+import CoreData
 
 open class CoreDataManager {
     
-    open func saveUser(in entityName: String, signedUser: SignedUserable, completion: @escaping (_ sucess: Bool?, _ error: NSError?)->Void?){
+    open func saveUser(in entityName: String, signedUser: SignedUserable){
         
         let entityObject = EntitySignedUser.signedUserToEntityObject(signedUser)
-        CoreDataHelper().saveData(in: entityName, values: entityObject, completion: completion)
+        CoreDataHelper().saveData(in: entityName, values: entityObject)
     }
     
-    open func fetchUser(from entity: String, completion: @escaping (_ sucess: Bool?, _ error: NSError?)->Void?) -> [SignedUserable] {
+    open func fetchUser(from entity: String) -> [SignedUserable]? {
+        var signupUsers: [SignedUserable] = []
         
-        let fetchedObject = CoreDataHelper().fetchData(from: entity, completion: completion)
-        
+        if let responseData = CoreDataHelper().fetchData(from: entity) {
+            for user in responseData {
+                if let userEmail = user.value(forKey: "email") as? String, let userPassword = user.value(forKey: "password") as? String {
+                    signupUsers.append(SignedUser.init(userName: "", userEmail: userEmail, userPassword: userPassword))
+                }
+            }
+            return signupUsers
+        }
+        return nil
     }
 }
