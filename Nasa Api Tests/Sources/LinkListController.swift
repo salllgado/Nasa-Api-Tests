@@ -13,7 +13,7 @@ class LinkListController: UITableViewController {
 
     let apiAvailable: [NasaFeedModel] = [
         NasaFeedModel(Name: "Asteroids Feed", Link: URL(string: "https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY")!),
-        NasaFeedModel(Name: "APOD", Link: URL(string: "https://api.nasa.gov/planetary/apod")!)
+        NasaFeedModel(Name: "APOD", Link: URL(string: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2014-10-01&concept_tags=True")!)
     ]
 
     override func viewDidLoad() {

@@ -17,23 +17,13 @@ class LinkDetailController: UIViewController {
         
         self.title = nasaFeedObj.Name
         
-        retriveDataFromURL(nasaFeedObj.Link)
-    }
-    
-    private func retriveDataFromURL(_ url: URL) {
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let data = data {
-//                let dataString = String(data: data, encoding: .utf8)
-                do {
-                    let jsonData = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-                    print(jsonData)
-                } catch {
-                    print(error)
-                }
+        NetworkManager().requestApodURL(nasaFeedObj.Link) { (apodObj, error) in
+            if let apodObj = apodObj {
+                print(apodObj)
             }
-            else if let error = error {
-                print(error)
+            else if let err = error {
+                print(err)
             }
-        }.resume()
+        }
     }
 }

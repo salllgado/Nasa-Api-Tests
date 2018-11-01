@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		62646BE5442D792553D6C06A /* Pods_Nasa_Api_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78320130EC0D25D3DF657C6D /* Pods_Nasa_Api_Tests.framework */; };
 		B80471B42092BDC000805C00 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80471B32092BDC000805C00 /* SignupController.swift */; };
+		B81CE9D0218B14B200DD4684 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81CE9CF218B14B200DD4684 /* NetworkManager.swift */; };
+		B81CE9D2218B17EC00DD4684 /* ApodObjModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81CE9D1218B17EC00DD4684 /* ApodObjModel.swift */; };
 		B82089EB218086F400A8C6FE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82089EA218086F400A8C6FE /* CoreDataManager.swift */; };
 		B82089EE2180887400A8C6FE /* SignedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82089ED2180887400A8C6FE /* SignedUser.swift */; };
 		B82089F1218088B200A8C6FE /* SignedUserable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82089F0218088B200A8C6FE /* SignedUserable.swift */; };
@@ -20,7 +22,6 @@
 		B85C609D218A7F240009E58B /* LinkListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C609C218A7F240009E58B /* LinkListController.swift */; };
 		B85C609F218A874A0009E58B /* NasaFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C609E218A874A0009E58B /* NasaFeedModel.swift */; };
 		B85C60A1218A8F400009E58B /* LinkDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C60A0218A8F400009E58B /* LinkDetailController.swift */; };
-		B85C60A4218A95DE0009E58B /* AsteroidsFeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C60A3218A95DE0009E58B /* AsteroidsFeedResponse.swift */; };
 		B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
 		B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* IntroController.swift */; };
@@ -48,6 +49,8 @@
 		5CC0A7FC015AB192845DEA85 /* Pods-Nasa Api Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Api Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests.release.xcconfig"; sourceTree = "<group>"; };
 		78320130EC0D25D3DF657C6D /* Pods_Nasa_Api_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Api_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80471B32092BDC000805C00 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		B81CE9CF218B14B200DD4684 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B81CE9D1218B17EC00DD4684 /* ApodObjModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodObjModel.swift; sourceTree = "<group>"; };
 		B82089EA218086F400A8C6FE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		B82089ED2180887400A8C6FE /* SignedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedUser.swift; sourceTree = "<group>"; };
 		B82089F0218088B200A8C6FE /* SignedUserable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedUserable.swift; sourceTree = "<group>"; };
@@ -60,7 +63,6 @@
 		B85C609C218A7F240009E58B /* LinkListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListController.swift; sourceTree = "<group>"; };
 		B85C609E218A874A0009E58B /* NasaFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaFeedModel.swift; sourceTree = "<group>"; };
 		B85C60A0218A8F400009E58B /* LinkDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDetailController.swift; sourceTree = "<group>"; };
-		B85C60A3218A95DE0009E58B /* AsteroidsFeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsFeedResponse.swift; sourceTree = "<group>"; };
 		B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8929FB2204A2D9E00FB5C05 /* Nasa Api Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Api Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,7 +155,8 @@
 		B85C60A2218A95A10009E58B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				B85C60A3218A95DE0009E58B /* AsteroidsFeedResponse.swift */,
+				B81CE9CF218B14B200DD4684 /* NetworkManager.swift */,
+				B81CE9D1218B17EC00DD4684 /* ApodObjModel.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -445,8 +448,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B81CE9D0218B14B200DD4684 /* NetworkManager.swift in Sources */,
 				B823BA362175642100FF1EF2 /* CoreDataHelper.swift in Sources */,
-				B85C60A4218A95DE0009E58B /* AsteroidsFeedResponse.swift in Sources */,
 				B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */,
 				B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */,
 				B85C609F218A874A0009E58B /* NasaFeedModel.swift in Sources */,
@@ -458,6 +461,7 @@
 				B82089EE2180887400A8C6FE /* SignedUser.swift in Sources */,
 				B8BF13C9217CFF0500E31C90 /* MenuController.swift in Sources */,
 				B82089EB218086F400A8C6FE /* CoreDataManager.swift in Sources */,
+				B81CE9D2218B17EC00DD4684 /* ApodObjModel.swift in Sources */,
 				B80471B42092BDC000805C00 /* SignupController.swift in Sources */,
 				B85C609B218A7E660009E58B /* LinkListCell.swift in Sources */,
 			);

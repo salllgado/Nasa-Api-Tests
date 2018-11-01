@@ -58,12 +58,11 @@ class IntroController: UIViewController {
     }
     
     private func validUser()-> Bool {
-        if let responseData = CoreDataHelper().fetchData(from: "User") {
-            for user in responseData {
-                if let userEmail = user.value(forKey: "email") as? String, let userPassword = user.value(forKey: "password") as? String {
-                    if userEmail == self.loginTf.text && userPassword == self.passwordTf.text {
-                        return true
-                    }
+        
+        if let signedUsers = CoreDataManager().fetchUser(from: "User") {
+            for user in signedUsers {
+                if user.userEmail == self.loginTf.text && user.userPassword == self.passwordTf.text {
+                    return true
                 }
             }
         }
