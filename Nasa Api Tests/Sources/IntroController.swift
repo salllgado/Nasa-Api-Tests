@@ -74,6 +74,7 @@ class IntroController: UIViewController {
         if validLogin() {
             //chamar menu
             
+            
             let storyboard = UIStoryboard.init(name: "Menu", bundle: Bundle(for: self.classForCoder))
             if let introViewController = storyboard.instantiateViewController(withIdentifier: "instantiateMenuController") as? MenuController {
                 self.navigationController?.pushViewController(introViewController, animated: true)

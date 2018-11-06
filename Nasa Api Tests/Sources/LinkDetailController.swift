@@ -17,13 +17,5 @@ class LinkDetailController: UIViewController {
         
         self.title = nasaFeedObj.Name
         
-        NetworkManager().requestApodURL(nasaFeedObj.Link) { (apodObj, error) in
-            if let apodObj = apodObj {
-                print(apodObj)
-            }
-            else if let err = error {
-                print(err)
-            }
-        }
     }
 }

@@ -10,5 +10,5 @@ import Foundation
 
 struct NasaFeedModel {
     var Name: String
-    var Link: URL
+    var apiType: AvailableApis
 }

@@ -22,6 +22,8 @@
 		B85C609D218A7F240009E58B /* LinkListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C609C218A7F240009E58B /* LinkListController.swift */; };
 		B85C609F218A874A0009E58B /* NasaFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C609E218A874A0009E58B /* NasaFeedModel.swift */; };
 		B85C60A1218A8F400009E58B /* LinkDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C60A0218A8F400009E58B /* LinkDetailController.swift */; };
+		B85CB4BB219191EB0012DFA6 /* AsteroidsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85CB4BA219191EB0012DFA6 /* AsteroidsModel.swift */; };
+		B85CB4BF21919C5B0012DFA6 /* AsteroidDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85CB4BE21919C5B0012DFA6 /* AsteroidDistance.swift */; };
 		B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
 		B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* IntroController.swift */; };
@@ -63,6 +65,8 @@
 		B85C609C218A7F240009E58B /* LinkListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListController.swift; sourceTree = "<group>"; };
 		B85C609E218A874A0009E58B /* NasaFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaFeedModel.swift; sourceTree = "<group>"; };
 		B85C60A0218A8F400009E58B /* LinkDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDetailController.swift; sourceTree = "<group>"; };
+		B85CB4BA219191EB0012DFA6 /* AsteroidsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsModel.swift; sourceTree = "<group>"; };
+		B85CB4BE21919C5B0012DFA6 /* AsteroidDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidDistance.swift; sourceTree = "<group>"; };
 		B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8929FB2204A2D9E00FB5C05 /* Nasa Api Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Api Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,8 +134,11 @@
 		B82089EC2180885E00A8C6FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B81CE9D1218B17EC00DD4684 /* ApodObjModel.swift */,
+				B85CB4BA219191EB0012DFA6 /* AsteroidsModel.swift */,
 				B82089ED2180887400A8C6FE /* SignedUser.swift */,
 				B85C609E218A874A0009E58B /* NasaFeedModel.swift */,
+				B85CB4BE21919C5B0012DFA6 /* AsteroidDistance.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -156,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				B81CE9CF218B14B200DD4684 /* NetworkManager.swift */,
-				B81CE9D1218B17EC00DD4684 /* ApodObjModel.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -451,10 +457,12 @@
 				B81CE9D0218B14B200DD4684 /* NetworkManager.swift in Sources */,
 				B823BA362175642100FF1EF2 /* CoreDataHelper.swift in Sources */,
 				B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */,
+				B85CB4BF21919C5B0012DFA6 /* AsteroidDistance.swift in Sources */,
 				B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */,
 				B85C609F218A874A0009E58B /* NasaFeedModel.swift in Sources */,
 				B82089F1218088B200A8C6FE /* SignedUserable.swift in Sources */,
 				B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */,
+				B85CB4BB219191EB0012DFA6 /* AsteroidsModel.swift in Sources */,
 				B85C609D218A7F240009E58B /* LinkListController.swift in Sources */,
 				B82089F3218089E400A8C6FE /* EntitySignedUser.swift in Sources */,
 				B85C60A1218A8F400009E58B /* LinkDetailController.swift in Sources */,

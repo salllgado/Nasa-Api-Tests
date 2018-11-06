@@ -8,23 +8,25 @@
 
 import UIKit
 
+enum AvailableApis: String {
+    case apod = "APOD"
+    case asteroids = "Asteroids Feed"
+}
+
 class LinkListController: UITableViewController {
-    
 
     let apiAvailable: [NasaFeedModel] = [
-        NasaFeedModel(Name: "Asteroids Feed", Link: URL(string: "https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY")!),
-        NasaFeedModel(Name: "APOD", Link: URL(string: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2014-10-01&concept_tags=True")!)
+        NasaFeedModel(Name: AvailableApis.asteroids.rawValue, apiType: AvailableApis.asteroids),
+        NasaFeedModel(Name: AvailableApis.apod.rawValue, apiType: AvailableApis.apod)
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.estimatedRowHeight = 88
-
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -46,8 +48,20 @@ class LinkListController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let link = apiAvailable[indexPath.row]
-        performSegue(withIdentifier: "loadLinkDetail", sender: link)
+        
+        let selectedApi = apiAvailable[indexPath.row]
+        
+        NetworkManager().getDataFromApi(api: selectedApi.apiType) { (data, error) in
+            if let apodObj = data as? ApodObjModel {
+                self.performSegue(withIdentifier: "loadLinkDetail", sender: apodObj)
+            }
+            else if let asteroidsList = data as? AsteroidsList {
+                print(asteroidsList)
+            }
+            else if let err = error {
+                print(err)
+            }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
