@@ -293,7 +293,6 @@
 				B8929FAF204A2D9E00FB5C05 /* Frameworks */,
 				B8929FB0204A2D9E00FB5C05 /* Resources */,
 				AA65E39AA6D1D75633A63BC7 /* [CP] Embed Pods Frameworks */,
-				E10F77EDF41E7C00EB6782E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -430,21 +429,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E10F77EDF41E7C00EB6782E6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
