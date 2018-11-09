@@ -16,6 +16,5 @@ class LinkDetailController: UIViewController {
         super.viewDidLoad()
         
         self.title = nasaFeedObj.Name
-        
     }
 }

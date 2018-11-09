@@ -8,6 +8,7 @@
 
 import UIKit
 import CSUtils
+import KeychainSwift
 
 class IntroController: UIViewController {
     
@@ -17,13 +18,26 @@ class IntroController: UIViewController {
     @IBOutlet weak var signInBtn: UIButton!
     @IBOutlet weak var signUpBtn: UIButton!
     
+    let keychainAcess = KeychainSwift()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tryAutoLogin()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureStyles()
+    }
+    
+    private func tryAutoLogin() {
+        if let _ = keychainAcess.get("user_email"), let _ = keychainAcess.get("user_password") {
+            let storyboard = UIStoryboard.init(name: "Menu", bundle: Bundle(for: self.classForCoder))
+            if let introViewController = storyboard.instantiateViewController(withIdentifier: "instantiateMenuController") as? MenuController {
+                self.navigationController?.pushViewController(introViewController, animated: true)
+            }
+        }
     }
     
     private func validLogin()-> Bool {
@@ -73,7 +87,9 @@ class IntroController: UIViewController {
     @IBAction func actionSignIn(_ sender: Any) {
         if validLogin() {
             //chamar menu
-            
+            // salvar os dados no keychain
+            keychainAcess.set(self.loginTf.text!, forKey: "user_email")
+            keychainAcess.set(self.passwordTf.text!, forKey: "user_password")
             
             let storyboard = UIStoryboard.init(name: "Menu", bundle: Bundle(for: self.classForCoder))
             if let introViewController = storyboard.instantiateViewController(withIdentifier: "instantiateMenuController") as? MenuController {

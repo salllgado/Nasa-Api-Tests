@@ -7,8 +7,9 @@ target 'Nasa Api Tests' do
 
   # Pods for Nasa Api Tests
    pod 'TPKeyboardAvoiding', :git => 'https://github.com/michaeltyson/TPKeyboardAvoiding.git'
-   pod 'CSUtils', :git => 'https://github.com/salllgado/CSUtils.git'
-#   , :path => '/Users/salgado/Documents/my_Projects/Projetos_iOS/CSUtils'
+   pod 'CSUtils', :git => 'https://github.com/salllgado/CSUtils.git', :branch => 'URLParsing'
+   #   , :path => '/Users/salgado/Documents/my_Projects/Projetos_iOS/CSUtils'
+   pod 'KeychainSwift', '~> 13.0'
    pod 'Firebase/Core'
    pod 'Firebase/Auth'
 

@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nasa Api Tests/Sources/Network/NetworkManager.swift"
-            timestampString = "563194572.169248"
+            filePath = "Nasa Api Tests/Sources/LinkListController.swift"
+            timestampString = "563461425.343315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "requestAsteroidsListURL(completionHandler:)"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nasa Api Tests/Sources/LinkListController.swift"
-            timestampString = "563194572.169348"
+            filePath = "Nasa Api Tests/Sources/IntroController.swift"
+            timestampString = "563461425.3433729"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "tableView(_:didSelectRowAt:)"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "actionSignIn(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
