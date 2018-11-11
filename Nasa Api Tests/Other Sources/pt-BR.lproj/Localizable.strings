@@ -22,4 +22,6 @@
 "DADOS_CADASTRADOS_MENSAGEM" = "Seus dados foram salvos, volte a tela de login, e identifique com seu novo login";
 "DADOS_CADASTRADOS" = "Dados Cadastrados com Sucesso";
 "NOME_PLACEHOLDER" = "Nome";
-
+"LOGIN_ERROR_BLANK_FIELDS" = "Há campos não preenchidos, confira e tente novamente.";
+"LOGIN_ERROR_NOT_FOUND" = "Certifique-se que o email e senha estão corretos e tente novamente";
+"ERROR_GENERIC_MESSAGE" = "Ocorreu um erro interno";

@@ -29,7 +29,6 @@ class SignupController: UIViewController {
     }
     
     private func saveData() {
-        
     }
     
     // MARK: Actions
@@ -37,17 +36,24 @@ class SignupController: UIViewController {
         guard let userLogin = self.userLoginTf.text, let userPassword = self.userPasswordTf.text, let userName = self.userNameTf.text else {
             return
         }
-        CoreDataHelper().saveData(in: "User", values: [
+        if CoreDataHelper().saveData(in: "User", values: [
             "email": userLogin,
             "password": userPassword,
             "name": userName
-            ])
-        
-        CSUtils.showAlertController("Dados cadastrados", mensage: "Dados cadastrados mensagem", alertButtons: [.OK]) { (_) -> Void? in
-            // ...
-            return
+            ]) {
+            let alert = CSUtils.showAlertController("Dados cadastrados", mensage: "DADOS_CADASTRADOS_MENSAGEM", alertButtons: [.OK]) { (_) -> Void? in
+                return
+            }
+            present(alert, animated: true, completion: {
+                self.navigationController?.popViewController(animated: true)
+            })
+            
+        } else  {
+            CSUtils.showAlertController("ERROR", mensage: "ERROR_GENERIC_MESSAGE", alertButtons: [.OK]) { (_) -> Void? in
+                // ...
+                return
+            }
         }
-        
     }
 }
 

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B8929FB1204A2D9E00FB5C05"
-               BuildableName = "Nasa Api Tests.app"
+               BuildableName = "NasaApi.app"
                BlueprintName = "Nasa Api Tests"
                ReferencedContainer = "container:Nasa Api Tests.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B8929FB1204A2D9E00FB5C05"
-            BuildableName = "Nasa Api Tests.app"
+            BuildableName = "NasaApi.app"
             BlueprintName = "Nasa Api Tests"
             ReferencedContainer = "container:Nasa Api Tests.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B8929FB1204A2D9E00FB5C05"
-            BuildableName = "Nasa Api Tests.app"
+            BuildableName = "NasaApi.app"
             BlueprintName = "Nasa Api Tests"
             ReferencedContainer = "container:Nasa Api Tests.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B8929FB1204A2D9E00FB5C05"
-            BuildableName = "Nasa Api Tests.app"
+            BuildableName = "NasaApi.app"
             BlueprintName = "Nasa Api Tests"
             ReferencedContainer = "container:Nasa Api Tests.xcodeproj">
          </BuildableReference>

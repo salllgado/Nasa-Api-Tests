@@ -52,17 +52,20 @@ class IntroController: UIViewController {
         }
         
         if !validUser() {
-            let alert = CSUtils.showAlertController("ERROR", mensage: "LOGIN_ERROR_BLANK_FIELDS", alertButtons: [.DISMISS]) { (_) -> Void? in return }
+            let alert = CSUtils.showAlertController("ERROR", mensage: "LOGIN_ERROR_NOT_FOUND", alertButtons: [.DISMISS]) { (_) -> Void? in return }
             present(alert, animated: true, completion: {
                 self.passwordTf.text = ""
             })
             return false
         }
-        
-        // faz verificação no userdefauts
         return true
     }
     
+    /**
+     - Verifica se há campos em branco.
+     
+     - return: Boolean
+     */
     private func verifyFields()-> Bool {
         var isValid: Bool!
         if (loginTf.text  == nil || loginTf.text == "") || (passwordTf.text == nil || passwordTf.text == "") {
@@ -71,8 +74,12 @@ class IntroController: UIViewController {
         return isValid == false ? false : true
     }
     
+    /**
+     - Percorre no core data por um login existente aonde email e senha coincidão com as informadas.
+     
+     - return: Boolean
+     */
     private func validUser()-> Bool {
-        
         if let signedUsers = CoreDataManager().fetchUser(from: "User") {
             for user in signedUsers {
                 if user.userEmail == self.loginTf.text && user.userPassword == self.passwordTf.text {
@@ -99,7 +106,6 @@ class IntroController: UIViewController {
     }
     
     @IBAction func actionSignUp(_ sender: Any) {
-        // criar uma tela de signup
     }
 }
 

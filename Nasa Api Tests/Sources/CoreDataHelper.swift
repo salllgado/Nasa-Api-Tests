@@ -20,9 +20,9 @@ class CoreDataHelper {
         }
     }
     
-    open func saveData(in entityName: String, values: [String: String]) {
+    open func saveData(in entityName: String, values: [String: String]) -> Bool {
         guard let context = appDelegate?.persistenContainer.viewContext else {
-            return
+            return false
         }
         
         let entityNewObject = NSEntityDescription.insertNewObject(forEntityName: entityName, into: context)
@@ -34,10 +34,10 @@ class CoreDataHelper {
         // 4
         do {
             try context.save()
-//            completion(true, nil)
+            return true
         } catch let error as NSError {
-//            completion(false, error)
             print("Could not save. \(error), \(error.userInfo)")
+            return false
         }
     }
     

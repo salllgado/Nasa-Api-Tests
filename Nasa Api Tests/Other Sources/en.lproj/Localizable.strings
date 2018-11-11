@@ -22,3 +22,5 @@
 "DADOS_CADASTRADOS_MENSAGEM" = "Your data has been saved, Return to login page, and authenticate with your login.";
 "DADOS_CADASTRADOS" = "Login has been saved.";
 "NOME_PLACEHOLDER" = "Name";
+"LOGIN_ERROR_BLANK_FIELDS" = "Please enter with data in all fields bellow.";
+"LOGIN_ERROR_NOT_FOUND" = "Credentials not founded, please try again.";
