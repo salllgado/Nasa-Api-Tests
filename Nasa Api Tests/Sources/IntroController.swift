@@ -32,7 +32,13 @@ class IntroController: UIViewController {
     }
     
     private func tryAutoLogin() {
-        if let _ = keychainAcess.get("user_email"), let _ = keychainAcess.get("user_password") {
+        if let userLogin = keychainAcess.get("user_email"), let loginPassword = keychainAcess.get("user_password") {
+            
+            #if DEBUG
+                print(userLogin)
+                print(loginPassword)
+            #endif
+            
             let storyboard = UIStoryboard.init(name: "Menu", bundle: Bundle(for: self.classForCoder))
             if let introViewController = storyboard.instantiateViewController(withIdentifier: "instantiateMenuController") as? MenuController {
                 self.navigationController?.pushViewController(introViewController, animated: true)
@@ -40,60 +46,11 @@ class IntroController: UIViewController {
         }
     }
     
-    private func validLogin()-> Bool {
-        if !verifyFields() {
-            let alert = CSUtils.showAlertController("ERROR", mensage: "LOGIN_ERROR_BLANK_FIELDS", alertButtons: [.DISMISS]) { (_) -> Void? in
-                return
-            }
-            present(alert, animated: true, completion: {
-                self.passwordTf.text = ""
-            })
-            return false
-        }
-        
-        if !validUser() {
-            let alert = CSUtils.showAlertController("ERROR", mensage: "LOGIN_ERROR_NOT_FOUND", alertButtons: [.DISMISS]) { (_) -> Void? in return }
-            present(alert, animated: true, completion: {
-                self.passwordTf.text = ""
-            })
-            return false
-        }
-        return true
-    }
-    
-    /**
-     - Verifica se há campos em branco.
-     
-     - return: Boolean
-     */
-    private func verifyFields()-> Bool {
-        var isValid: Bool!
-        if (loginTf.text  == nil || loginTf.text == "") || (passwordTf.text == nil || passwordTf.text == "") {
-            isValid = false
-        }
-        return isValid == false ? false : true
-    }
-    
-    /**
-     - Percorre no core data por um login existente aonde email e senha coincidão com as informadas.
-     
-     - return: Boolean
-     */
-    private func validUser()-> Bool {
-        if let signedUsers = CoreDataManager().fetchUser(from: "User") {
-            for user in signedUsers {
-                if user.userEmail == self.loginTf.text && user.userPassword == self.passwordTf.text {
-                    return true
-                }
-            }
-        }
-        return false
-    }
-    
     //MARK: Actions
     @IBAction func actionSignIn(_ sender: Any) {
-        if validLogin() {
-            //chamar menu
+        let  loginHandler = LoginValidationHelper().validLogin(loginTf: loginTf, passwordTf: passwordTf)
+        
+        if loginHandler.valid {
             // salvar os dados no keychain
             keychainAcess.set(self.loginTf.text!, forKey: "user_email")
             keychainAcess.set(self.passwordTf.text!, forKey: "user_password")
@@ -102,6 +59,9 @@ class IntroController: UIViewController {
             if let introViewController = storyboard.instantiateViewController(withIdentifier: "instantiateMenuController") as? MenuController {
                 self.navigationController?.pushViewController(introViewController, animated: true)
             }
+        }
+        else {
+            print(loginHandler.error?.rawValue)
         }
     }
     

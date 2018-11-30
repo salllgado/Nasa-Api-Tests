@@ -16,6 +16,7 @@
 		B82089F1218088B200A8C6FE /* SignedUserable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82089F0218088B200A8C6FE /* SignedUserable.swift */; };
 		B82089F3218089E400A8C6FE /* EntitySignedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82089F2218089E400A8C6FE /* EntitySignedUser.swift */; };
 		B823BA362175642100FF1EF2 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B823BA352175642100FF1EF2 /* CoreDataHelper.swift */; };
+		B83BBCE921B1496900347C7A /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83BBCE821B1496900347C7A /* LoginHandler.swift */; };
 		B84510EE2189CC89008904A5 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84510F02189CC8A008904A5 /* Menu.storyboard */; };
 		B85C6098218A7B2B0009E58B /* ListOfLinks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85C6097218A7B2B0009E58B /* ListOfLinks.storyboard */; };
 		B85C609B218A7E660009E58B /* LinkListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C609A218A7E660009E58B /* LinkListCell.swift */; };
@@ -33,6 +34,8 @@
 		B8929FCB204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FCA204A2D9F00FB5C05 /* Nasa_Api_TestsUITests.swift */; };
 		B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8929FDE204A2FCE00FB5C05 /* UserData.xcdatamodeld */; };
 		B8BF13C9217CFF0500E31C90 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BF13C8217CFF0500E31C90 /* MenuController.swift */; };
+		B8C850B421A1C5100003AFAB /* LoginValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C850B321A1C5100003AFAB /* LoginValidationHelper.swift */; };
+		B8C850B821A1C5450003AFAB /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C850B721A1C5450003AFAB /* ErrorType.swift */; };
 		B8E451D92059DF2100FBBCCE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8E451DB2059DF2100FBBCCE /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,7 @@
 		B82089F0218088B200A8C6FE /* SignedUserable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedUserable.swift; sourceTree = "<group>"; };
 		B82089F2218089E400A8C6FE /* EntitySignedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitySignedUser.swift; sourceTree = "<group>"; };
 		B823BA352175642100FF1EF2 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		B83BBCE821B1496900347C7A /* LoginHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHandler.swift; sourceTree = "<group>"; };
 		B84510EF2189CC8A008904A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Menu.storyboard; sourceTree = "<group>"; };
 		B84510F22189CCA1008904A5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Menu.strings"; sourceTree = "<group>"; };
 		B85C6097218A7B2B0009E58B /* ListOfLinks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfLinks.storyboard; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		B8929FCC204A2D9F00FB5C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8929FDF204A2FCE00FB5C05 /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
 		B8BF13C8217CFF0500E31C90 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		B8C850B321A1C5100003AFAB /* LoginValidationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidationHelper.swift; sourceTree = "<group>"; };
+		B8C850B721A1C5450003AFAB /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		B8E451DA2059DF2100FBBCCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B8E451DC2059DF8A00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		B8E451DD2059DF8B00FBBCCE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -151,6 +157,14 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		B83BBCE721B1495E00347C7A /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				B83BBCE821B1496900347C7A /* LoginHandler.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
 		B85C6099218A7E400009E58B /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +224,8 @@
 		B8929FD6204A2E6B00FB5C05 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B83BBCE721B1495E00347C7A /* Structs */,
+				B8C850B621A1C5360003AFAB /* Enum */,
 				B85C60A2218A95A10009E58B /* Network */,
 				B85C6099218A7E400009E58B /* View */,
 				B82089EF218088A400A8C6FE /* Protocols */,
@@ -277,8 +293,17 @@
 		B8B208772174A5DF002321BD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B8C850B321A1C5100003AFAB /* LoginValidationHelper.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B8C850B621A1C5360003AFAB /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				B8C850B721A1C5450003AFAB /* ErrorType.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,8 +468,11 @@
 				B81CE9D0218B14B200DD4684 /* NetworkManager.swift in Sources */,
 				B823BA362175642100FF1EF2 /* CoreDataHelper.swift in Sources */,
 				B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */,
+				B83BBCE921B1496900347C7A /* LoginHandler.swift in Sources */,
 				B85CB4BF21919C5B0012DFA6 /* AsteroidDistance.swift in Sources */,
 				B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */,
+				B8C850B421A1C5100003AFAB /* LoginValidationHelper.swift in Sources */,
+				B8C850B821A1C5450003AFAB /* ErrorType.swift in Sources */,
 				B85C609F218A874A0009E58B /* NasaFeedModel.swift in Sources */,
 				B82089F1218088B200A8C6FE /* SignedUserable.swift in Sources */,
 				B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */,
