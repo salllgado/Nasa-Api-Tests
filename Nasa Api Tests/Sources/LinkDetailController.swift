@@ -10,11 +10,17 @@ import UIKit
 
 class LinkDetailController: UIViewController {
     
-    var nasaFeedObj: NasaFeedModel!
+    var nasaApodObj: ApodObjModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.layoutIfNeeded()
         
-        self.title = nasaFeedObj.Name
+        
+    }
+    
+    
+    @IBAction func actionBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

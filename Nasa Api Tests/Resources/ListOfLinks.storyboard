@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AKZ-pG-Cv2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AKZ-pG-Cv2">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +13,13 @@
         <!--Link List Controller-->
         <scene sceneID="XzT-cZ-sWp">
             <objects>
-                <tableViewController id="AKZ-pG-Cv2" customClass="LinkListController" customModule="Nasa_Api_Tests" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="AKZ-pG-Cv2" customClass="LinkListController" customModule="NasaApi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Il0-TQ-TKg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="linkCellIdentifier" rowHeight="88" id="OF5-KX-IoD" customClass="LinkListCell" customModule="Nasa_Api_Tests" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="linkCellIdentifier" rowHeight="88" id="OF5-KX-IoD" customClass="LinkListCell" customModule="NasaApi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OF5-KX-IoD" id="aLQ-fr-68s">
@@ -30,7 +30,7 @@
                                             <rect key="frame" x="2" y="2" width="371" height="83.666666666666671"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dws-FR-09F">
-                                                    <rect key="frame" x="57" y="8" width="298" height="67.666666666666671"/>
+                                                    <rect key="frame" x="57" y="15.999999999999996" width="298" height="51.666666666666657"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                                     <color key="textColor" red="0.2211814523" green="0.31624689700000003" blue="0.55098354819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -47,10 +47,10 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Dws-FR-09F" secondAttribute="trailing" constant="16" id="LH6-3b-JYq"/>
                                                 <constraint firstItem="ihX-lv-rDT" firstAttribute="leading" secondItem="0eB-yX-2oo" secondAttribute="leading" constant="16" id="MBd-Uf-EQx"/>
-                                                <constraint firstItem="Dws-FR-09F" firstAttribute="top" secondItem="0eB-yX-2oo" secondAttribute="top" constant="8" id="RKH-bU-eJD"/>
+                                                <constraint firstItem="Dws-FR-09F" firstAttribute="top" secondItem="0eB-yX-2oo" secondAttribute="top" constant="16" id="RKH-bU-eJD"/>
                                                 <constraint firstItem="Dws-FR-09F" firstAttribute="leading" secondItem="ihX-lv-rDT" secondAttribute="trailing" constant="16" id="Zdh-Ld-rmQ"/>
                                                 <constraint firstItem="ihX-lv-rDT" firstAttribute="centerY" secondItem="0eB-yX-2oo" secondAttribute="centerY" id="Zh8-5S-vCd"/>
-                                                <constraint firstAttribute="bottom" secondItem="Dws-FR-09F" secondAttribute="bottom" constant="8" id="aUI-xg-3Vd"/>
+                                                <constraint firstAttribute="bottom" secondItem="Dws-FR-09F" secondAttribute="bottom" constant="16" id="aUI-xg-3Vd"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -84,23 +84,47 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="9n6-Mv-y1p" kind="show" identifier="loadLinkDetail" id="CMR-Qx-Kyg"/>
+                        <segue destination="9n6-Mv-y1p" kind="modal" identifier="loadLinkDetail" id="CMR-Qx-Kyg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OeT-zH-jKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1" y="148"/>
         </scene>
-        <!--Link Detail Controller-->
+        <!--Some Title-->
         <scene sceneID="gCH-1T-yVp">
             <objects>
-                <viewController id="9n6-Mv-y1p" customClass="LinkDetailController" customModule="Nasa_Api_Tests" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9n6-Mv-y1p" customClass="LinkDetailController" customModule="NasaApi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tMH-Zf-DGT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaD-Wu-dQ7">
+                                <rect key="frame" x="43.666666666666657" y="384" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="B1k-iR-fln"/>
+                                    <constraint firstAttribute="width" constant="288" id="d73-8Z-NXr"/>
+                                </constraints>
+                                <state key="normal" title="Voltar "/>
+                                <connections>
+                                    <action selector="actionBack:" destination="9n6-Mv-y1p" eventType="touchUpInside" id="IKy-ki-oqb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yaD-Wu-dQ7" firstAttribute="centerX" secondItem="tMH-Zf-DGT" secondAttribute="centerX" id="BYl-Lf-dVx"/>
+                            <constraint firstItem="yaD-Wu-dQ7" firstAttribute="centerY" secondItem="tMH-Zf-DGT" secondAttribute="centerY" id="kh1-CD-El4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Z0c-oK-ztI"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Some Title" id="lal-Pi-LFa">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Evs-AO-qNf"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="navigationItem" destination="lal-Pi-LFa" id="uOT-tk-kmF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYO-pO-Xld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
