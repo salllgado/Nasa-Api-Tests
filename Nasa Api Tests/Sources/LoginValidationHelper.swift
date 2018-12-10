@@ -50,7 +50,7 @@ class LoginValidationHelper {
      - Percorre no core data por um login existente aonde email e senha coincidão com as informadas.
      - return: LoginHandler
      */
-    private func validUser()-> LoginHandler {
+    open func validUser()-> LoginHandler {
         
         if let signedUsers = CoreDataManager().fetchUser(from: "User") {
             for user in signedUsers {

@@ -10,7 +10,14 @@ import UIKit
 import CSUtils
 import KeychainSwift
 
-class IntroController: UIViewController {
+protocol IntroControllable: class {
+    
+    func dismissErrorView()
+    
+    func showMainController()
+}
+
+class IntroController: UIViewController, IntroControllable {
     
     @IBOutlet weak var loginTf: UITextField!
     @IBOutlet weak var passwordTf: UITextField!
@@ -18,12 +25,16 @@ class IntroController: UIViewController {
     @IBOutlet weak var signInBtn: UIButton!
     @IBOutlet weak var signUpBtn: UIButton!
     
+    var interactor: IntroInteractionable?
+    
     let keychainAcess = KeychainSwift()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
         
-        tryAutoLogin()
+        self.view.alpha = 0.6
+        interactor?.tryAutoLoginFromKeychain()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,18 +42,24 @@ class IntroController: UIViewController {
         configureStyles()
     }
     
-    private func tryAutoLogin() {
-        if let userLogin = keychainAcess.get("user_email"), let loginPassword = keychainAcess.get("user_password") {
-            
-            #if DEBUG
-                print(userLogin)
-                print(loginPassword)
-            #endif
-            
-            let storyboard = UIStoryboard.init(name: "Menu", bundle: Bundle(for: self.classForCoder))
-            if let introViewController = storyboard.instantiateViewController(withIdentifier: "instantiateMenuController") as? MenuController {
-                self.navigationController?.pushViewController(introViewController, animated: true)
-            }
+    private func setup() {
+        let viewController = self
+        let interactor = IntroInteractor()
+        let presenter = IntroPresenter()
+        
+        viewController.interactor = interactor
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+    }
+    
+    func dismissErrorView() {
+        self.view.alpha = 1
+    }
+    
+    func showMainController() {
+        let storyboard = UIStoryboard.init(name: "Menu", bundle: Bundle(for: self.classForCoder))
+        if let navController = storyboard.instantiateInitialViewController() as? UINavigationController {
+            self.present(navController, animated: true, completion: nil)
         }
     }
     
@@ -56,12 +73,15 @@ class IntroController: UIViewController {
             keychainAcess.set(self.passwordTf.text!, forKey: "user_password")
             
             let storyboard = UIStoryboard.init(name: "Menu", bundle: Bundle(for: self.classForCoder))
-            if let introViewController = storyboard.instantiateViewController(withIdentifier: "instantiateMenuController") as? MenuController {
-                self.navigationController?.pushViewController(introViewController, animated: true)
+            if let navController = storyboard.instantiateInitialViewController() as? UINavigationController {
+                self.present(navController, animated: true, completion: nil)
             }
         }
         else {
-            print(loginHandler.error?.rawValue)
+            let alertController = CSUtils.showAlertController(CSUtils.getLocalizableString("ERROR"), mensage: CSUtils.getLocalizableString(loginHandler.error!.rawValue), alertButtons: [.DISMISS]) { (_) -> Void? in
+                return
+            }
+            self.present(alertController, animated: true, completion: nil)
         }
     }
     

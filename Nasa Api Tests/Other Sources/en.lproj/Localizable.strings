@@ -24,3 +24,5 @@
 "NOME_PLACEHOLDER" = "Name";
 "LOGIN_ERROR_BLANK_FIELDS" = "Please enter with data in all fields bellow.";
 "LOGIN_ERROR_NOT_FOUND" = "Credentials not founded, please try again.";
+"ERROR_BLANK_FIELDS" = "Hame some missing fields, please try again.";
+"CONFIRMAR_CADASTRO_BUTTON" = "Cadastrar.";

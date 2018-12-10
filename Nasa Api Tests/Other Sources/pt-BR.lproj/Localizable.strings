@@ -25,3 +25,4 @@
 "LOGIN_ERROR_BLANK_FIELDS" = "Há campos não preenchidos, confira e tente novamente.";
 "LOGIN_ERROR_NOT_FOUND" = "Certifique-se que o email e senha estão corretos e tente novamente";
 "ERROR_GENERIC_MESSAGE" = "Ocorreu um erro interno";
+"ERROR_BLANK_FIELDS" = "Há campos em branco, preencha-os e tente novamente.";

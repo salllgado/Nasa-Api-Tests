@@ -41,7 +41,7 @@ class SignupController: UIViewController {
             "password": userPassword,
             "name": userName
             ]) {
-            let alert = CSUtils.showAlertController("Dados cadastrados", mensage: "DADOS_CADASTRADOS_MENSAGEM", alertButtons: [.OK]) { (_) -> Void? in
+            let alert = CSUtils.showAlertController(CSUtils.getLocalizableString("ERROR"), mensage: CSUtils.getLocalizableString("DADOS_CADASTRADOS_MENSAGEM"), alertButtons: [.OK]) { (_) -> Void? in
                 return
             }
             present(alert, animated: true, completion: {
@@ -49,10 +49,12 @@ class SignupController: UIViewController {
             })
             
         } else  {
-            CSUtils.showAlertController("ERROR", mensage: "ERROR_GENERIC_MESSAGE", alertButtons: [.OK]) { (_) -> Void? in
+            let alert = CSUtils.showAlertController("ERROR", mensage: "ERROR_GENERIC_MESSAGE", alertButtons: [.OK]) { (_) -> Void? in
                 // ...
                 return
             }
+            present(alert, animated: true, completion: {
+            })
         }
     }
 }

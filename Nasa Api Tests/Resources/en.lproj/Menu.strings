@@ -2,10 +2,13 @@
 /* Class = "UILabel"; text = "NEWS_LABEL"; ObjectID = "8Js-g9-HMw"; */
 "8Js-g9-HMw.text" = "Nasa News";
 
+/* Class = "UILabel"; text = "BEM_VINDO_DATA"; ObjectID = "VuT-qa-JMv"; */
+"VuT-qa-JMv.text" = "Bem Vindo";
+
 /* Class = "UILabel"; text = "Label"; ObjectID = "hai-iG-eBd"; */
 "hai-iG-eBd.text" = "Label";
 
-/* Class = "UILabel"; text = "NASA WEB"; ObjectID = "ndv-XH-Gzo"; */
+/* Class = "UILabel"; text = "NASA_WEB"; ObjectID = "ndv-XH-Gzo"; */
 "ndv-XH-Gzo.text" = "Nasa Web";
 
 /* Class = "UINavigationItem"; title = "Home"; ObjectID = "yVd-6A-h5T"; */
@@ -13,6 +16,3 @@
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "yYT-TF-wfH"; */
 "yYT-TF-wfH.text" = "Label";
-
-/* Class = "UILabel"; text = "BEM_VINDO_DATA"; ObjectID = "VuT-qa-JMv"; */
-"VuT-qa-JMv.text" = "Bem Vindo";

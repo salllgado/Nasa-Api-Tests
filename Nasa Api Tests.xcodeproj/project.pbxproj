@@ -26,6 +26,8 @@
 		B85CB4BB219191EB0012DFA6 /* AsteroidsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85CB4BA219191EB0012DFA6 /* AsteroidsModel.swift */; };
 		B85CB4BF21919C5B0012DFA6 /* AsteroidDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85CB4BE21919C5B0012DFA6 /* AsteroidDistance.swift */; };
 		B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */; };
+		B8844D8621BDD84B00E87F60 /* IntroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8844D8521BDD84B00E87F60 /* IntroInteractor.swift */; };
+		B8844D8821BDD89600E87F60 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8844D8721BDD89600E87F60 /* IntroPresenter.swift */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
 		B8929FB8204A2D9E00FB5C05 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* IntroController.swift */; };
 		B8929FBB204A2D9E00FB5C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FB9204A2D9E00FB5C05 /* Main.storyboard */; };
@@ -72,6 +74,9 @@
 		B85CB4BA219191EB0012DFA6 /* AsteroidsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsModel.swift; sourceTree = "<group>"; };
 		B85CB4BE21919C5B0012DFA6 /* AsteroidDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidDistance.swift; sourceTree = "<group>"; };
 		B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8844D8321BDBC0D00E87F60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Menu.strings; sourceTree = "<group>"; };
+		B8844D8521BDD84B00E87F60 /* IntroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractor.swift; sourceTree = "<group>"; };
+		B8844D8721BDD89600E87F60 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
 		B8929FB2204A2D9E00FB5C05 /* NasaApi.dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaApi.dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8929FB7204A2D9E00FB5C05 /* IntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
@@ -181,6 +186,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		B8844D8421BDD83700E87F60 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				B8844D8521BDD84B00E87F60 /* IntroInteractor.swift */,
+				B8844D8721BDD89600E87F60 /* IntroPresenter.swift */,
+			);
+			name = Intro;
+			sourceTree = "<group>";
+		};
 		B8929FA9204A2D9E00FB5C05 = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +238,7 @@
 		B8929FD6204A2E6B00FB5C05 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B8844D8421BDD83700E87F60 /* Intro */,
 				B83BBCE721B1495E00347C7A /* Structs */,
 				B8C850B621A1C5360003AFAB /* Enum */,
 				B85C60A2218A95A10009E58B /* Network */,
@@ -466,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B81CE9D0218B14B200DD4684 /* NetworkManager.swift in Sources */,
+				B8844D8621BDD84B00E87F60 /* IntroInteractor.swift in Sources */,
 				B823BA362175642100FF1EF2 /* CoreDataHelper.swift in Sources */,
 				B8929FE0204A2FCE00FB5C05 /* UserData.xcdatamodeld in Sources */,
 				B83BBCE921B1496900347C7A /* LoginHandler.swift in Sources */,
@@ -485,6 +501,7 @@
 				B82089EB218086F400A8C6FE /* CoreDataManager.swift in Sources */,
 				B81CE9D2218B17EC00DD4684 /* ApodObjModel.swift in Sources */,
 				B80471B42092BDC000805C00 /* SignupController.swift in Sources */,
+				B8844D8821BDD89600E87F60 /* IntroPresenter.swift in Sources */,
 				B85C609B218A7E660009E58B /* LinkListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +530,7 @@
 			children = (
 				B84510EF2189CC8A008904A5 /* Base */,
 				B84510F22189CCA1008904A5 /* pt-BR */,
+				B8844D8321BDBC0D00E87F60 /* en */,
 			);
 			name = Menu.storyboard;
 			sourceTree = "<group>";
