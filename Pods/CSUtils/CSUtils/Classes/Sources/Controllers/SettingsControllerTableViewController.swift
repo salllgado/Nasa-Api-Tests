@@ -32,7 +32,7 @@ class SettingsControllerTableViewController: UITableViewController {
             return UITableViewCell()
         }
         
-        cell.configure(text: "Texxxxxtanto")
+        cell.configure(text: "Test")
         return cell
     }
 }

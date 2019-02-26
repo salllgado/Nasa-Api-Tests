@@ -25,7 +25,6 @@
 		B85C60A1218A8F400009E58B /* LinkDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C60A0218A8F400009E58B /* LinkDetailController.swift */; };
 		B85CB4BB219191EB0012DFA6 /* AsteroidsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85CB4BA219191EB0012DFA6 /* AsteroidsModel.swift */; };
 		B85CB4BF21919C5B0012DFA6 /* AsteroidDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85CB4BE21919C5B0012DFA6 /* AsteroidDistance.swift */; };
-		B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */; };
 		B8844D8621BDD84B00E87F60 /* IntroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8844D8521BDD84B00E87F60 /* IntroInteractor.swift */; };
 		B8844D8821BDD89600E87F60 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8844D8721BDD89600E87F60 /* IntroPresenter.swift */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
@@ -73,7 +72,6 @@
 		B85C60A0218A8F400009E58B /* LinkDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDetailController.swift; sourceTree = "<group>"; };
 		B85CB4BA219191EB0012DFA6 /* AsteroidsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsModel.swift; sourceTree = "<group>"; };
 		B85CB4BE21919C5B0012DFA6 /* AsteroidDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidDistance.swift; sourceTree = "<group>"; };
-		B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8844D8321BDBC0D00E87F60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Menu.strings; sourceTree = "<group>"; };
 		B8844D8521BDD84B00E87F60 /* IntroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractor.swift; sourceTree = "<group>"; };
 		B8844D8721BDD89600E87F60 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 		B8929FB4204A2D9E00FB5C05 /* Nasa Api Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B87B187B20D6F85500C8ADAE /* GoogleService-Info.plist */,
 				B8929FDB204A2EC200FB5C05 /* Other Sources */,
 				B8929FD8204A2E9000FB5C05 /* Resources */,
 				B8929FD6204A2E6B00FB5C05 /* Sources */,
@@ -408,7 +405,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84510EE2189CC89008904A5 /* Menu.storyboard in Resources */,
-				B87B187C20D6F85600C8ADAE /* GoogleService-Info.plist in Resources */,
 				B8929FC0204A2D9E00FB5C05 /* LaunchScreen.storyboard in Resources */,
 				B8E451D92059DF2100FBBCCE /* Localizable.strings in Resources */,
 				B85C6098218A7B2B0009E58B /* ListOfLinks.storyboard in Resources */,
@@ -451,26 +447,22 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CSUtils/CSUtils.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IBLocalizable/IBLocalizable.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSUtils.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBLocalizable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

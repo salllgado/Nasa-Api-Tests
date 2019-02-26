@@ -1,90 +1,36 @@
 PODS:
-  - CSUtils (1.1.3)
-  - Firebase/Auth (4.13.0):
-    - Firebase/Core
-    - FirebaseAuth (= 4.6.1)
-  - Firebase/Core (4.13.0):
-    - FirebaseAnalytics (= 4.2.0)
-    - FirebaseCore (= 4.0.20)
-  - FirebaseAnalytics (4.2.0):
-    - FirebaseCore (~> 4.0)
-    - FirebaseInstanceID (~> 2.0)
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-    - nanopb (~> 0.3)
-  - FirebaseAuth (4.6.1):
-    - FirebaseAnalytics (~> 4.2)
-    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
-    - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseCore (4.0.20):
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-  - FirebaseInstanceID (2.0.10):
-    - FirebaseCore (~> 4.0)
-  - GoogleToolboxForMac/DebugUtils (2.1.3):
-    - GoogleToolboxForMac/Defines (= 2.1.3)
-  - GoogleToolboxForMac/Defines (2.1.3)
-  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
-    - GoogleToolboxForMac/Defines (= 2.1.3)
-  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3)":
-    - GoogleToolboxForMac/DebugUtils (= 2.1.3)
-    - GoogleToolboxForMac/Defines (= 2.1.3)
-    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)"
-  - "GoogleToolboxForMac/NSString+URLArguments (2.1.3)"
-  - GTMSessionFetcher/Core (1.1.15)
+  - CSUtils (1.1.3):
+    - IBLocalizable
+    - TPKeyboardAvoiding
+  - IBLocalizable (1.3.0)
   - KeychainSwift (13.0.0)
-  - nanopb (0.3.8):
-    - nanopb/decode (= 0.3.8)
-    - nanopb/encode (= 0.3.8)
-  - nanopb/decode (0.3.8)
-  - nanopb/encode (0.3.8)
   - TPKeyboardAvoiding (1.3.2)
 
 DEPENDENCIES:
-  - CSUtils (from `https://github.com/salllgado/CSUtils.git`, branch `URLParsing`)
-  - Firebase/Auth
-  - Firebase/Core
-  - KeychainSwift (~> 13.0)
-  - TPKeyboardAvoiding (from `https://github.com/michaeltyson/TPKeyboardAvoiding.git`)
+  - CSUtils (from `https://github.com/salllgado/CSUtils.git`)
+  - KeychainSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Firebase
-    - FirebaseAnalytics
-    - FirebaseAuth
-    - FirebaseCore
-    - FirebaseInstanceID
-    - GoogleToolboxForMac
-    - GTMSessionFetcher
+    - IBLocalizable
     - KeychainSwift
-    - nanopb
+    - TPKeyboardAvoiding
 
 EXTERNAL SOURCES:
   CSUtils:
-    :branch: URLParsing
     :git: https://github.com/salllgado/CSUtils.git
-  TPKeyboardAvoiding:
-    :git: https://github.com/michaeltyson/TPKeyboardAvoiding.git
 
 CHECKOUT OPTIONS:
   CSUtils:
-    :commit: fab31bb9dc9294e70cc694794e74af8aaa50a75d
+    :commit: 02ad3604857b2bab4dcd8322bc6416543c783581
     :git: https://github.com/salllgado/CSUtils.git
-  TPKeyboardAvoiding:
-    :commit: 8821c7ed0e29c87e30ba93c11dacb138bd17dae4
-    :git: https://github.com/michaeltyson/TPKeyboardAvoiding.git
 
 SPEC CHECKSUMS:
-  CSUtils: 6da6e84bbb42b136c65ec3214392a0a5b5962d74
-  Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
-  FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
-  FirebaseAuth: bf22cacf22c60ab454bf2636f556d8892b10b53f
-  FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
-  FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
-  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
-  GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  CSUtils: d438b40153ff22c43721a0a0462612f0add9a662
+  IBLocalizable: bebcf04d98f422a2544f2b000d19387dfe8c317b
   KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
-  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
 
-PODFILE CHECKSUM: ad5fea818ff164786fd8a091bae7ce2e89237f2f
+PODFILE CHECKSUM: c760996c0dab0d62f046f8cee66020c45c84e742
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0

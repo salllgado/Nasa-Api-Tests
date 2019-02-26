@@ -42,18 +42,18 @@ open class CSUtils {
 
 extension CSUtils {
     open class func setButtonStyle(_ buttons: [UIButton], textColor: UIColor? = nil, backgoundColor: UIColor? = nil, borderColor: UIColor? = nil, rounded: Int? = nil) {
-        _ = CSStyles().setButtonStyle(buttons, textColor: textColor, backgoundColor: backgoundColor, borderColor: borderColor, rounded: rounded)
+        CSStyles().setButtonStyle(buttons, textColor: textColor, backgoundColor: backgoundColor, borderColor: borderColor, rounded: rounded)
     }
     
     open class func setLabelStyle(_ labels: [UILabel], textColor: UIColor? = nil, alignment: NSTextAlignment? = nil) {
-        _ = CSStyles().setLabelStyle(labels, textColor: textColor, alignment: alignment)
+        CSStyles().setLabelStyle(labels, textColor: textColor, alignment: alignment)
     }
     
     open class func setViewStyle(_ view: UIView, cornerRadius: Int?, borderColor: UIColor?, borderWidth: Int?, backgroundColor: UIColor?) {
-        _ = CSStyles().setViewStyle(view, cornerRadius: cornerRadius, borderColor: borderColor, borderWidth: borderWidth, backgroundColor: backgroundColor)
+        CSStyles().setViewStyle(view, cornerRadius: cornerRadius, borderColor: borderColor, borderWidth: borderWidth, backgroundColor: backgroundColor)
     }
     
     open class func setNavBarStyle(_ navigationBar: UINavigationBar, barColor: UIColor?, tintColor: UIColor?) {
-        _ = CSStyles().setNavBarStyle(navigationBar, barColor: barColor, tintColor: tintColor)
+        CSStyles().setNavBarStyle(navigationBar, barColor: barColor, tintColor: tintColor)
     }
 }

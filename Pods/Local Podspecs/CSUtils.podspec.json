@@ -19,5 +19,13 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "CSUtils/Classes/**/*"
+  "source_files": "CSUtils/Classes/**/*",
+  "dependencies": {
+    "TPKeyboardAvoiding": [
+
+    ],
+    "IBLocalizable": [
+
+    ]
+  }
 }

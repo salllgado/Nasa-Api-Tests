@@ -7,11 +7,15 @@
 
 import Foundation
 
-class CSAlerts {
+public class CSAlerts {
+    
+    public init() {
+        
+    }
     
     let locale = CSLocalizations()
     
-     func buildAlert(title: String?, mensage: String, alertButtons: [AlertButtonEnum], _ withButtonColor: UIColor? = UIColor.black, completion: @escaping (_ :Void?)-> Void?)  -> UIAlertController {
+     public func buildAlert(title: String?, mensage: String, alertButtons: [AlertButtonEnum], _ withButtonColor: UIColor? = UIColor.black, completion: @escaping (_ :Void?)-> Void?)  -> UIAlertController {
         let alertBox = UIAlertController(title: title, message: mensage, preferredStyle: .alert)
         for itens in alertButtons {
             switch itens {
@@ -31,7 +35,7 @@ class CSAlerts {
         return alertBox
     }
     
-    func buildAlertWithTextField(title: String?, mensage: String, alertButtons: [AlertButtonEnum], _ withButtonColor: UIColor? = UIColor.black, completion: @escaping (_ :[String]?)-> Void?)  -> UIAlertController {
+    public func buildAlertWithTextField(title: String?, mensage: String, alertButtons: [AlertButtonEnum], _ withButtonColor: UIColor? = UIColor.black, completion: @escaping (_ :[String]?)-> Void?)  -> UIAlertController {
         let alertBox = UIAlertController(title: title, message: mensage, preferredStyle: .alert)
         alertBox.addTextField { (textField: UITextField) in
             textField.placeholder = "DIGITE_SEU_LOGIN"
@@ -69,7 +73,7 @@ class CSAlerts {
         return alertBox
     }
     
-    func buildAlertWithTextField(title: String?, mensage: String, alertButtons: [AlertButtonEnum], _ withButtonColor: UIColor? = UIColor.black, numberOfFields: Int, completion: @escaping (_ :[String]?)-> Void?)  -> UIAlertController {
+    public func buildAlertWithTextField(title: String?, mensage: String, alertButtons: [AlertButtonEnum], _ withButtonColor: UIColor? = UIColor.black, numberOfFields: Int, completion: @escaping (_ :[String]?)-> Void?)  -> UIAlertController {
         let alertBox = UIAlertController(title: title, message: mensage, preferredStyle: .alert)
         for _ in 1...numberOfFields  {
             alertBox.addTextField { (textField: UITextField) in
