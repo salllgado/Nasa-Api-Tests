@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78A254E12225DE7E003FA990 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A254E02225DE7E003FA990 /* UserLogin.swift */; };
+		78A254E42225DF16003FA990 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A254E32225DF16003FA990 /* LoginManager.swift */; };
+		78A254E72225DF2A003FA990 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A254E62225DF2A003FA990 /* KeychainHelper.swift */; };
+		78A254E92225E08E003FA990 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A254E82225E08E003FA990 /* DBManager.swift */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
-		B8929FB8204A2D9E00FB5C05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* ViewController.swift */; };
+		B8929FB8204A2D9E00FB5C05 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* MainController.swift */; };
 		B8929FBB204A2D9E00FB5C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FB9204A2D9E00FB5C05 /* Main.storyboard */; };
 		B8929FBD204A2D9E00FB5C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8929FBC204A2D9E00FB5C05 /* Assets.xcassets */; };
 		B8929FC0204A2D9E00FB5C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FBE204A2D9E00FB5C05 /* LaunchScreen.storyboard */; };
@@ -26,9 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		78A254E02225DE7E003FA990 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
+		78A254E32225DF16003FA990 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		78A254E62225DF2A003FA990 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		78A254E82225E08E003FA990 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		B8929FB2204A2D9E00FB5C05 /* Nasa Api Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Api Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8929FB7204A2D9E00FB5C05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8929FB7204A2D9E00FB5C05 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		B8929FBA204A2D9E00FB5C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8929FBC204A2D9E00FB5C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8929FBF204A2D9E00FB5C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +64,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78A254DB2225CF7E003FA990 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				78A254E52225DF1D003FA990 /* Managers */,
+				78A254E22225DF05003FA990 /* Helpers */,
+				78A254DF2225DE64003FA990 /* Models */,
+				78A254DE2225DE5C003FA990 /* Controllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		78A254DC2225CF8B003FA990 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8929FB9204A2D9E00FB5C05 /* Main.storyboard */,
+				B8929FBC204A2D9E00FB5C05 /* Assets.xcassets */,
+				B8929FBE204A2D9E00FB5C05 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		78A254DD2225CF92003FA990 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B8929FC1204A2D9E00FB5C05 /* Info.plist */,
+				B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
+		78A254DE2225DE5C003FA990 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B8929FB7204A2D9E00FB5C05 /* MainController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		78A254DF2225DE64003FA990 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78A254E02225DE7E003FA990 /* UserLogin.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		78A254E22225DF05003FA990 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				78A254E62225DF2A003FA990 /* KeychainHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		78A254E52225DF1D003FA990 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				78A254E32225DF16003FA990 /* LoginManager.swift */,
+				78A254E82225E08E003FA990 /* DBManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		B8929FA9204A2D9E00FB5C05 = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +148,9 @@
 		B8929FB4204A2D9E00FB5C05 /* Nasa Api Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */,
-				B8929FB7204A2D9E00FB5C05 /* ViewController.swift */,
-				B8929FB9204A2D9E00FB5C05 /* Main.storyboard */,
-				B8929FBC204A2D9E00FB5C05 /* Assets.xcassets */,
-				B8929FBE204A2D9E00FB5C05 /* LaunchScreen.storyboard */,
-				B8929FC1204A2D9E00FB5C05 /* Info.plist */,
+				78A254DD2225CF92003FA990 /* Other Sources */,
+				78A254DC2225CF8B003FA990 /* Resources */,
+				78A254DB2225CF7E003FA990 /* Sources */,
 			);
 			path = "Nasa Api Tests";
 			sourceTree = "<group>";
@@ -199,8 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8929FB8204A2D9E00FB5C05 /* ViewController.swift in Sources */,
+				B8929FB8204A2D9E00FB5C05 /* MainController.swift in Sources */,
+				78A254E92225E08E003FA990 /* DBManager.swift in Sources */,
+				78A254E42225DF16003FA990 /* LoginManager.swift in Sources */,
 				B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */,
+				78A254E72225DF2A003FA990 /* KeychainHelper.swift in Sources */,
+				78A254E12225DE7E003FA990 /* UserLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HT3YCTX6YE;
-				INFOPLIST_FILE = "Nasa Api Tests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Nasa Api Tests/Other Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "salgadosProductions.Nasa-Api-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,7 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HT3YCTX6YE;
-				INFOPLIST_FILE = "Nasa Api Tests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Nasa Api Tests/Other Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "salgadosProductions.Nasa-Api-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
