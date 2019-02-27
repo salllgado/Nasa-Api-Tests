@@ -1,5 +1,5 @@
 //
-//  DBManager.swift
+//  Entitys.swift
 //  Nasa Api Tests
 //
 //  Created by Chrystian Salgado on 26/02/19.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-class DBManager {
-    
+enum Entitys: String {
+    case UserLogin = "UserLogin"
 }

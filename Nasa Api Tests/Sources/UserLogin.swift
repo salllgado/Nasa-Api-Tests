@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import CoreData
 
-struct UserLogin {
+class UserLogin: NSManagedObject {
     
     var userEmail: String?
     var userPassword: String?

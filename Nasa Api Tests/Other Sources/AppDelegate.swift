@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -39,8 +40,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        saveContext()
     }
 
-
+    lazy var persistenContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "UserData")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error {
+                fatalError("Erro ao carregar o banco de dados Core Data")
+            }
+        })
+        return container
+    }()
+    
+    func saveContext() {
+        let context = persistenContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nsError = error as NSError
+                fatalError("Erro ao salvar o context \(nsError.userInfo)")
+            }
+        }
+    }
 }
 
