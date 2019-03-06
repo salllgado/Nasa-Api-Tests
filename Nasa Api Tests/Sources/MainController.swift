@@ -21,7 +21,7 @@ class MainController: UIViewController {
     }
     
     private func tryLogin() {
-        let userLogin = UserLogin(email: loginTf.text, password: passwordTf.text)
+        
     }
 
     @IBAction func actionScroll(_ sender: Any) {

@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		64F96589525705E84B77FDA6 /* Pods_Nasa_Api_TestsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814597EF51B9F380608B06F1 /* Pods_Nasa_Api_TestsUITests.framework */; };
-		78A254E12225DE7E003FA990 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A254E02225DE7E003FA990 /* UserLogin.swift */; };
 		78A254E42225DF16003FA990 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A254E32225DF16003FA990 /* LoginManager.swift */; };
 		78A254E72225DF2A003FA990 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A254E62225DF2A003FA990 /* KeychainHelper.swift */; };
-		78A254E92225E08E003FA990 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A254E82225E08E003FA990 /* CoreDataHelper.swift */; };
-		78A254EC2225E302003FA990 /* Entitys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A254EB2225E302003FA990 /* Entitys.swift */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
 		B8929FB8204A2D9E00FB5C05 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* MainController.swift */; };
 		B8929FBB204A2D9E00FB5C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FB9204A2D9E00FB5C05 /* Main.storyboard */; };
@@ -35,11 +32,8 @@
 /* Begin PBXFileReference section */
 		42E5BC35A9F049C4701EECD9 /* Pods_Nasa_Api_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Api_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5B10A9253C15EA94630F70 /* Pods-Nasa Api Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Api Tests.debug.xcconfig"; path = "Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		78A254E02225DE7E003FA990 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 		78A254E32225DF16003FA990 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		78A254E62225DF2A003FA990 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
-		78A254E82225E08E003FA990 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
-		78A254EB2225E302003FA990 /* Entitys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entitys.swift; sourceTree = "<group>"; };
 		7F26CED79D9DC1832BC98E5B /* Pods-Nasa Api TestsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Api TestsUITests.release.xcconfig"; path = "Target Support Files/Pods-Nasa Api TestsUITests/Pods-Nasa Api TestsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		814597EF51B9F380608B06F1 /* Pods_Nasa_Api_TestsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Api_TestsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FB2204A2D9E00FB5C05 /* Nasa Api Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Api Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,7 +121,6 @@
 		78A254DF2225DE64003FA990 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				78A254E02225DE7E003FA990 /* UserLogin.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -144,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				78A254E32225DF16003FA990 /* LoginManager.swift */,
-				78A254E82225E08E003FA990 /* CoreDataHelper.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -152,7 +144,6 @@
 		78A254EA2225E2EF003FA990 /* Enuns */ = {
 			isa = PBXGroup;
 			children = (
-				78A254EB2225E302003FA990 /* Entitys.swift */,
 			);
 			name = Enuns;
 			sourceTree = "<group>";
@@ -360,12 +351,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8929FB8204A2D9E00FB5C05 /* MainController.swift in Sources */,
-				78A254E92225E08E003FA990 /* CoreDataHelper.swift in Sources */,
 				78A254E42225DF16003FA990 /* LoginManager.swift in Sources */,
-				78A254EC2225E302003FA990 /* Entitys.swift in Sources */,
 				B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */,
 				78A254E72225DF2A003FA990 /* KeychainHelper.swift in Sources */,
-				78A254E12225DE7E003FA990 /* UserLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

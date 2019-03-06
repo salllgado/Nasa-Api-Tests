@@ -14,6 +14,6 @@ class LoginManager {
     }
     
     private func getUsersInDB() {
-        CoreDataHelper().fetchData(from: <#T##String#>)
+        // ...
     }
 }
