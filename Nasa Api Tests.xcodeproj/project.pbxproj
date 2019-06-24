@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		64F96589525705E84B77FDA6 /* Pods_Nasa_Api_TestsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814597EF51B9F380608B06F1 /* Pods_Nasa_Api_TestsUITests.framework */; };
-		78A254E42225DF16003FA990 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A254E32225DF16003FA990 /* LoginManager.swift */; };
-		78A254E72225DF2A003FA990 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A254E62225DF2A003FA990 /* KeychainHelper.swift */; };
+		B54FA63E22BE8BC7005926B5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54FA63D22BE8BC7005926B5 /* LoginViewModel.swift */; };
+		B54FA64122BE9284005926B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54FA64022BE9284005926B5 /* User.swift */; };
 		B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */; };
 		B8929FB8204A2D9E00FB5C05 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8929FB7204A2D9E00FB5C05 /* MainController.swift */; };
 		B8929FBB204A2D9E00FB5C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8929FB9204A2D9E00FB5C05 /* Main.storyboard */; };
@@ -32,10 +32,10 @@
 /* Begin PBXFileReference section */
 		42E5BC35A9F049C4701EECD9 /* Pods_Nasa_Api_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Api_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5B10A9253C15EA94630F70 /* Pods-Nasa Api Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Api Tests.debug.xcconfig"; path = "Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		78A254E32225DF16003FA990 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
-		78A254E62225DF2A003FA990 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		7F26CED79D9DC1832BC98E5B /* Pods-Nasa Api TestsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Api TestsUITests.release.xcconfig"; path = "Target Support Files/Pods-Nasa Api TestsUITests/Pods-Nasa Api TestsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		814597EF51B9F380608B06F1 /* Pods_Nasa_Api_TestsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Api_TestsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54FA63D22BE8BC7005926B5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B54FA64022BE9284005926B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B8929FB2204A2D9E00FB5C05 /* Nasa Api Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Api Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8929FB5204A2D9E00FB5C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8929FB7204A2D9E00FB5C05 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -82,11 +82,7 @@
 		78A254DB2225CF7E003FA990 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				78A254EA2225E2EF003FA990 /* Enuns */,
-				78A254E52225DF1D003FA990 /* Managers */,
-				78A254E22225DF05003FA990 /* Helpers */,
-				78A254DF2225DE64003FA990 /* Models */,
-				78A254DE2225DE5C003FA990 /* Controllers */,
+				B54FA63822BE8AA4005926B5 /* Login */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -110,44 +106,6 @@
 			path = "Other Sources";
 			sourceTree = "<group>";
 		};
-		78A254DE2225DE5C003FA990 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				B8929FB7204A2D9E00FB5C05 /* MainController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		78A254DF2225DE64003FA990 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		78A254E22225DF05003FA990 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				78A254E62225DF2A003FA990 /* KeychainHelper.swift */,
-			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
-		78A254E52225DF1D003FA990 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				78A254E32225DF16003FA990 /* LoginManager.swift */,
-			);
-			name = Managers;
-			sourceTree = "<group>";
-		};
-		78A254EA2225E2EF003FA990 /* Enuns */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Enuns;
-			sourceTree = "<group>";
-		};
 		7DEA6B4B9BAD4743C72FD61F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +115,40 @@
 				7F26CED79D9DC1832BC98E5B /* Pods-Nasa Api TestsUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B54FA63822BE8AA4005926B5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B54FA63922BE8AAD005926B5 /* View */,
+				B54FA63A22BE8AB5005926B5 /* ViewModel */,
+				B54FA63B22BE8ABE005926B5 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B54FA63922BE8AAD005926B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8929FB7204A2D9E00FB5C05 /* MainController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B54FA63A22BE8AB5005926B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B54FA63D22BE8BC7005926B5 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B54FA63B22BE8ABE005926B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B54FA64022BE9284005926B5 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B8929FA9204A2D9E00FB5C05 = {
@@ -209,6 +201,7 @@
 				B8929FAE204A2D9E00FB5C05 /* Sources */,
 				B8929FAF204A2D9E00FB5C05 /* Frameworks */,
 				B8929FB0204A2D9E00FB5C05 /* Resources */,
+				AE0695ED28F22E513F4B9BD8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -343,6 +336,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AE0695ED28F22E513F4B9BD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nasa Api Tests/Pods-Nasa Api Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -350,10 +367,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54FA64122BE9284005926B5 /* User.swift in Sources */,
 				B8929FB8204A2D9E00FB5C05 /* MainController.swift in Sources */,
-				78A254E42225DF16003FA990 /* LoginManager.swift in Sources */,
 				B8929FB6204A2D9E00FB5C05 /* AppDelegate.swift in Sources */,
-				78A254E72225DF2A003FA990 /* KeychainHelper.swift in Sources */,
+				B54FA63E22BE8BC7005926B5 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

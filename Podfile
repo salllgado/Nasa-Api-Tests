@@ -6,6 +6,9 @@ target 'Nasa Api Tests' do
   use_frameworks!
 
   # Pods for Nasa Api Tests
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'TPKeyboardAvoiding'
 
   target 'Nasa Api TestsUITests' do
     inherit! :search_paths
